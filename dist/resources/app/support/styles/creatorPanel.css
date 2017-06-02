@@ -1,0 +1,27 @@
+
+.creator{
+    background: white;
+    color: gray;
+    font-weight: 500;
+    font-family: "Helvetica Neue", sans-serif;
+    position: absolute;
+    right: 15px;
+    width: calc(35% - 30px);
+    top: 15px;
+    height: 70%;
+    border: 1px solid gray;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.creator:empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator:empty::after{
+    content:'Click  [Add New] or [Edit] to set project information';
+    font-weight: 300;
+    font-family: "Helvetica Neue", sans-serif;
+}

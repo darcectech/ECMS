@@ -1,0 +1,13 @@
+{
+  "name":"Cigar Holder",
+  "customizable":false,
+  "categories":["Project"],
+  "reference":8,
+  "description":"",
+  "price":"0.00",
+  "images":["cigarholder.jpeg"],
+  "video":[],
+  "guide":"",
+  "file":"cigar_holder",
+  "buzz":""
+}

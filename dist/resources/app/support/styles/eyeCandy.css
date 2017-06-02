@@ -1,0 +1,10 @@
+
+[ham]:hover{
+    cursor: pointer;
+    color:dodgerblue;
+}
+
+[sep]:hover{
+    cursor: pointer;
+    color:deeppink;
+}

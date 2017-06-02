@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   <title>3DPThings Content Manager</title>
+    <link rel="stylesheet" href="support/styles/standard.css">
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="support/fsman.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+    <script src="support/monkeypatcher.js"></script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <span hook="refresh">Refresh</span> </li>
+            <li> <span hook="New">Add New</span> </li>
+            <li> <span hook="Command">Command</span> </li>
+            <li> <span hook="Finder">Show Files</span> </li>
+
+            <li conditional right> <span hook="Apply">Apply</span> </li>
+            <li conditional right> <span hook="Cancel">Cancel</span> </li>
+        </ul>
+    </nav>
+
+    <div class="spacer"></div>
+
+    <main>
+
+
+        <span id="path"></span>
+        <div class="split45">
+            <div id="files">
+                <table>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="creator"></div>
+
+        <div class="dropZone"></div>
+
+    </main>
+
+    <script src="support/actions.js" defer></script>
+    <script src="support/smartBox.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Browsh 1.0.0</title>-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="bridgeHelper.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li onclick="document.querySelector('body > nav').classList.toggle('active')"> <i class="material-icons">menu</i> <span>Menu</span> </li>
+            <li onclick="document.querySelector('webview').reload()"> <i class="material-icons indicator">autorenew</i> <span>Reload</span> </li>
+            <li onclick="document.querySelector('webview').openDevTools({mode:'bottom'})"> <i class="material-icons msg">error_outline</i> <span>Developer Tools</span> </li>
+            <li onclick="startContentEdit()"> <i class="material-icons">edit</i> <span>Edit Content</span> </li>
+            <li onclick="require('electron').remote.getCurrentWindow().toggleDevTools()"> <i class="material-icons">stop</i> <span>Dev Tool</span> </li>
+        </ul>
+    </nav>
+
+    <webview id="view" partition="view" src="about:blank"></webview>
+
+    <script>
+        Framework.register('core.framework');
+        Framework.register('core.navigation');
+        Framework.register('language.handler');
+        Framework.register('emulate.php');
+        Framework.register('core.events');
+        Framework.register('transpiler.definition');
+
+        /** @namespace core.events.hooks */
+        core.events.hooks.domReady(() => {
+            window.webv = document.getElementsByTagName('webview')[0];
+            webv.loadURL( path.join("file://",__dirname,'website','index.html') )
+        });
+
+    </script>
+
+</body>
+</html>

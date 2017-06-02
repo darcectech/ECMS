@@ -1,0 +1,17 @@
+<body>
+    <div id="project">
+        <h1>{{name}}</h1>
+    
+        <div class="picturebox">
+            <div class="preview">
+                <img src="{{images[0]}}" width="100%" >
+            </div>
+
+            <div class="thumbnail">
+                <div _template_repeat="{{images[length]}}" >
+                    <img src="{{images}}">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

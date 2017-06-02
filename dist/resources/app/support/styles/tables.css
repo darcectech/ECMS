@@ -1,0 +1,47 @@
+table {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    table-layout:fixed;
+    border-collapse: collapse;
+    font-weight: 300;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td[row1]{
+    max-width:100%;
+}
+td[row3]{
+    width:60px;
+    text-align: right;
+}
+
+td[row2]{
+    width:60px;
+    text-align: right;
+}
+
+.creator td:first-child{
+    text-align: right;
+    width:40%;
+}
+
+.creator table{
+    color:dimgray;
+}
+
+.creator input[type=text]{
+    padding: 3px 6px;
+    width:90%;
+}

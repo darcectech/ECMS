@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DPThings</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_home.css">
+    <script src="backup/jquery-3.2.0.js"></script>
+    <script src="jparticle.jquery.js"></script>
+    <script src="_template.js"></script>
+    <script src="_glide.js" defer></script>
+    <script src="action.js"></script>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero" >
+    <h1>3DPThings</h1>
+</div>
+
+<section>
+
+    <h2>Welcome to 3DP Things</h2>
+    <p>3DP Things is a repository of 3D projects, games and puzzles that you can preview, personalize and even get your hands on!</p>
+
+
+    <br>
+
+    <h2>Projects <input type="text" placeholder="Filter" id="filter_projects"> </h2>
+    <div class="item_box_container" id="latest_project"></div>
+
+</section>
+
+<script>
+    $('.hero').jParticle({
+        disableMouse: false,
+        background: 'transparent',
+        color: 'gray',
+        particle: {
+            color: "white"
+        },
+        height:window.innerHeight
+
+    });
+
+    let searchTimeout = setTimeout(beginSearch,300);
+
+    let searchFilter = $('#filter_projects');
+
+    searchFilter.on('input',function(){
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(beginSearch,300);
+    });
+
+
+    loadProject('four_in_a_row'); //You can load the project individually like so
+    loadProject('padlock'); //You can load the project individually like so
+
+    // or you can load them in one attempt like so
+    loadProjectsFromList(['baby_box','knot_puzzle','dodecahedron_puzzle','cigar_holder']);
+
+    // when loading projects, you dont have to put underscores (you can use spaces if you want)
+    loadProjectsFromList(['jack puzzle','noughts and crosses','wits end','preposterous puzzle']);
+
+ </script>
+
+</body>
+
+</html>

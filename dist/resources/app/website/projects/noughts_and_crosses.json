@@ -1,0 +1,13 @@
+{
+  "name":"Noughts and Crosses",
+  "customizable":false,
+  "categories":["Project","Game"],
+  "reference":1,
+  "description":"",
+  "price":"0.00",
+  "images":["closed.bmp","open.bmp"],
+  "video":[],
+  "guide":"",
+  "file":"noughts_and_crosses",
+  "buzz":"Tic-tac-toe"
+}

@@ -1,0 +1,13 @@
+{
+  "name":"Baby Keepsake Box",
+  "customizable":true,
+  "categories":["Project"],
+  "reference":0,
+  "description":"",
+  "price":"0.00",
+  "images":["open trunk.PNG","Compartments.PNG","Storage.PNG","Trunk.PNG","lock.PNG","Baby's rattle.PNG"],
+  "video":[],
+  "guide":"Padlock seen in this project can be found on the padlock page",
+  "file":"baby_box",
+  "buzz":""
+}

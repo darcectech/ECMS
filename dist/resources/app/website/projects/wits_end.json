@@ -1,0 +1,13 @@
+{
+  "name":"Wits' End Puzzle",
+  "customizable":false,
+  "categories":["Project","Puzzle"],
+  "reference":6,
+  "description":"",
+  "price":"0.00",
+  "images":["wit_parts.bmp"],
+  "video":[],
+  "guide":"",
+  "file":"wits_end",
+  "buzz":"wits end"
+}
