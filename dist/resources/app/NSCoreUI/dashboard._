@@ -1,0 +1,16 @@
+
+<main id="dashboard" class="active">
+
+    <nav>
+        <ul>
+            <li onclick="toggleMenu()"> <span>Menu</span> <i class="material-icons">menu</i> </li>
+            <li> <span>Metrics</span> <i class="material-icons">show_chart</i> </li>
+            <li> <span>Files</span> <i class="material-icons">folder_open</i> </li>
+            <li> <span>Maintenance</span> <i class="material-icons">restore</i> </li>
+            <li> <span>Information</span> <i class="material-icons">info_outline</i> </li>
+        </ul>
+    </nav>
+
+    <div id="filter" onclick="toggleMenu()"></div>
+
+</main>

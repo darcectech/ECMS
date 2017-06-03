@@ -1,0 +1,12 @@
+#statusbar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--toolbar-background);
+    color:gainsboro;
+    height: 20px;
+    padding-left: 6px;
+    text-transform: capitalize;
+    font-weight: 200;
+}

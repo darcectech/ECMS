@@ -1,0 +1,87 @@
+
+#dashboard{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+#dashboard nav{
+    position: absolute;
+    background: #009688;
+    width: var(--toolbar-height);
+    left: 0;
+    height:100%;
+    z-index: 555;
+    color: white;
+    overflow: hidden;
+    padding-top: calc(var(     --toolbar-height) + var(--toolbar-padding));
+    transition: all .4s;
+    top: 0;
+}
+
+#dashboard nav ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    position: absolute;
+    width: 100%;
+    min-width: 200px;
+    right: 0;
+    height: 100%;
+}
+
+#dashboard nav ul li{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#dashboard.active nav {
+    width: calc(var(--toolbar-height) + 200px + (2 * var(--toolbar-padding)));
+}
+
+#dashboard nav ul li span {
+    width: calc(100% - var(--toolbar-height));
+    position: relative;
+    opacity:0;
+    transition: all .4s;
+}
+
+#dashboard.active nav ul li span{
+    opacity:1;
+}
+
+#dashboard nav ul li>* {
+    padding: 8px;
+    pointer-events: none;
+}
+
+#dashboard nav ul li:hover{
+    background:rgba(28,28,28,0.1);
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+#dashboard #filter{
+    position: fixed;
+    z-index: 552;
+    left: 0;
+    top:var(--toolbar-height);
+    height:calc(100% - (var(--toolbar-height) + 20px));
+    background:rgb(28,28,28);
+    opacity: 0;
+    width:100%;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+#dashboard.active #filter{
+    opacity: .4;
+    pointer-events: auto;
+}

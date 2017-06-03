@@ -1,5 +1,18 @@
 
 @import 'toolbar.css';
+@import 'statusbar.css';
+@import 'dashboard.css';
+
+
+:root{
+    --toolbar-height:40px;
+    --toolbar-padding:7px;
+    --toolbar-button-size:calc(var(--toolbar-height) - (var(--toolbar-padding) * 2));
+    --toolbar-background:rgba(28,28,28,0.6);
+
+    --toolbar-search-background-before:rgba(125, 125, 125, 0.5);;
+    --toolbar-search-background-after:rgb(86, 86, 86);
+}
 
 *{
     box-sizing: border-box;

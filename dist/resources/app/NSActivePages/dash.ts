@@ -15,6 +15,14 @@ use.page = {
             maxRequested();
         });
 
+        global['NSVisualProvider']['setComponent']('statusbar',document.body);
+        global['NSVisualProvider']['setComponent']('dashboard',document.body);
 
+        controls.statusbar.changeData('status','innerHTML','ready');
+
+        global['toggleMenu'] = function(){
+            $('#dashboard').toggleClass('active');
+
+        }
     }
 };

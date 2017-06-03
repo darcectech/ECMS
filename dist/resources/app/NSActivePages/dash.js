@@ -9,6 +9,12 @@ use.page = {
         controls.toolbar.addEventListener("ondblclick", function () {
             maxRequested();
         });
+        global['NSVisualProvider']['setComponent']('statusbar', document.body);
+        global['NSVisualProvider']['setComponent']('dashboard', document.body);
+        controls.statusbar.changeData('status', 'innerHTML', 'ready');
+        global['toggleMenu'] = function () {
+            $('#dashboard').toggleClass('active');
+        };
     }
 };
 //# sourceMappingURL=dash.js.map

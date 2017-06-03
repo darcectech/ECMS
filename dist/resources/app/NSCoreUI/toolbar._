@@ -1,4 +1,5 @@
 <div id="toolbar">
+    <img src="ECMS.png" alt="" id="Logo">
     <input type="text" id="search" placeholder="Search">
 
     <h4 id="title" vp-target="title">ECMS</h4>
