@@ -1,6 +1,7 @@
 {
   "core":{
-    "firstRun":"false"
+    "firstRun":"false",
+    "dev":"true"
   },
   "NSNavigator":{
     "moduleFolders":["NSCore","lib"]

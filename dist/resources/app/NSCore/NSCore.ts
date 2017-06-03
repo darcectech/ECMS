@@ -13,6 +13,11 @@ let filesToSetup = ['NSLogger','NSNavigator','NSTransitioner','NSVisualProvider'
 
 let preLogMonitor = [];
 
+if ( JSON.parse(SETUP_INFO).core.dev == true ){
+    remote.getCurrentWindow().toggleDevTools();
+    alert('Opening DevTools');
+}
+
 const takeNote = function(note:string){
     if (!global['NSLogger']) preLogMonitor.push(note);
     else global['NSLogger']['rec'](note);
@@ -181,6 +186,8 @@ window.addEventListener('onerror',function(e:ErrorEvent){
                 `);
     }
 });
+
+
 
 window.onload = function(){
     takeNote('onload');
