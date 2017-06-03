@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
-const SETUP_INFO = fs.readFileSync('./setup/NSinfo.json','utf8');
+const SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup/NSinfo.json'),'utf8');
 
 let filesToSetup = ['NSLogger','NSNavigator','NSTransitioner','NSVisualProvider','register:dash'];
 
@@ -67,8 +67,8 @@ const use:ModuleObjects = function use(moduleName){
 
     places.some(function(folder:string){
 
-        if ( fs.existsSync( path.join(folder,moduleName+'.js') ) ){
-            moduleFileContent = fs.readFileSync( path.join(folder,moduleName+'.js') , 'utf8' );
+        if ( fs.existsSync( path.join(__dirname,folder,moduleName+'.js') ) ){
+            moduleFileContent = fs.readFileSync( path.join(__dirname,folder,moduleName+'.js') , 'utf8' );
             return true;
         }
 
@@ -127,7 +127,7 @@ Object.defineProperty(use,'page',{
     get (){
         return function(name){
 
-            let pageContent = fs.readFileSync( path.join('NSActivePages',name+'.js') , 'utf8' );
+            let pageContent = fs.readFileSync( path.join(__dirname,'NSActivePages',name+'.js') , 'utf8' );
 
             eval(pageContent);
 

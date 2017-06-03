@@ -14,19 +14,19 @@ use.this = {
                 return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
             });
         })();
-        fs.appendFileSync(path.join('setup', 'log_NS_host.log'), ` ERR${errId} > ${itms.join(' ; ')}\n`, 'utf8');
+        fs.appendFileSync(path.join(__dirname, 'setup', 'log_NS_host.log'), ` ERR${errId} > ${itms.join(' ; ')}\n`, 'utf8');
         return errId;
     },
     rec: function (v) {
-        fs.appendFileSync(path.join('setup', 'log_monitor.log'), (new Date()).toString() + ' > ' + v + '\n', 'utf8');
+        fs.appendFileSync(path.join(__dirname, 'setup', 'log_monitor.log'), (new Date()).toString() + ' > ' + v + '\n', 'utf8');
     }
 };
-fs.closeSync(fs.openSync(path.join('setup', 'log_monitor.log'), 'w'));
-fs.closeSync(fs.openSync(path.join('setup', 'log_NS_host.log'), 'w'));
-fs.writeFileSync(path.join('setup', 'log_monitor.log'), '', 'utf8');
+fs.closeSync(fs.openSync(path.join(__dirname, 'setup', 'log_monitor.log'), 'w'));
+fs.closeSync(fs.openSync(path.join(__dirname, 'setup', 'log_NS_host.log'), 'w'));
+fs.writeFileSync(path.join(__dirname, 'setup', 'log_monitor.log'), '', 'utf8');
 //get logged items and write them
 preLogMonitor.forEach(function (inp) {
-    fs.appendFileSync(path.join('setup', 'log_monitor.log'), (new Date()).toString() + ' > ' + inp + '\n', 'utf8');
+    fs.appendFileSync(path.join(__dirname, 'setup', 'log_monitor.log'), (new Date()).toString() + ' > ' + inp + '\n', 'utf8');
 });
 preLogMonitor = [];
 //# sourceMappingURL=NSLogger.js.map
