@@ -1,0 +1,9 @@
+<div id="toolbar">
+    <input type="text" id="search" placeholder="Search">
+
+    <h4 id="title" vp-target="title">ECMS</h4>
+
+    <button class="min" onclick="minRequested()"><i class="material-icons">remove</i></button>
+    <button class="max" onclick="maxRequested()"><i class="material-icons">crop_square</i></button>
+    <button class="close" onclick="closeRequested()"><i class="material-icons">close</i></button>
+</div>

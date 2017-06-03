@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daryl Cecile",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "electron": "^1.6.8"
-  }
+  },
+  "os": ["darwin","win32"],
+  "files": ["/"]
 }

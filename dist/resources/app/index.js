@@ -1,58 +1,54 @@
-
-
+/**
+ * Created by darylcecile on 02/06/2017.
+ */
+///<reference path="node_modules/@types/node/index.d.ts"/>
 const electron = require('electron');
 const app = electron.app;
-const path = require('path');
-
-
-
+const _path = require('path');
 let options = [
-    //'enable-tcp-fastopen',
-    //'enable-experimental-canvas-features',
+    'enable-tcp-fastopen',
+    'enable-experimental-canvas-features',
     'enable-experimental-web-platform-features',
     'enable-overlay-scrollbars',
-    //'enable-hardware-overlays',
-    //'enable-universal-accelerated-overflow-scroll',
     'allow-file-access-from-files',
-    'allow-insecure-websocket-from-https-origin',
-    // ['js-flags', '--harmony_collections']
+    'allow-insecure-websocket-from-https-origin'
 ];
-
-for(let i=0; i < options.length; ++i) {
+for (let i = 0; i < options.length; ++i) {
     if (typeof options[i] === 'string')
         app.commandLine.appendSwitch(options[i]);
     else
         app.commandLine.appendSwitch(options[i][0], options[i][1]);
 }
-
-
-
-app.once('ready',()=>{
+app.once('ready', () => {
     let win = new electron.BrowserWindow({
         width: 800,
         height: 600,
-        fullscreenable:false,
-        show:false,
-        webPreferences:{
+        fullscreenable: false,
+        show: false,
+        icon: _path.join(__dirname, 'ECMS.png'),
+        webPreferences: {
             showDevTools: true,
             experimentalFeatures: true,
-            blinkfeatures:"CSSVariables,KeyboardEventKey",
-            allowRunningInsecureContent:true,
-            webSecurity:false,
-            nodeIntegrationInWorker:true,
-            flags:"--harmony_proxies --harmony_collections",
-            icon:path.join(__dirname,'assets/logo/primary.png'),
-            blinkFeatures:"CustomElementsV1"
+            blinkfeatures: "CSSVariables,KeyboardEventKey",
+            allowRunningInsecureContent: true,
+            webSecurity: false,
+            nodeIntegrationInWorker: true,
+            flags: "--harmony_proxies --harmony_collections",
+            blinkFeatures: "CustomElementsV1"
         },
-        title:'PHP Shimmer'
+        title: 'Com',
+        frame: false,
+        backgroundColor: '#343434'
     });
     win.on('closed', () => {
-        win = null
+        win = null;
     });
-
     win.once('ready-to-show', () => {
-        win.show()
+        win.show();
     });
-
-    win.loadURL(`file://${__dirname}/main.html`);
+    win.loadURL(`file://${__dirname}/index.html`);
 });
+app.on('window-all-closed', () => {
+    app.quit();
+});
+//# sourceMappingURL=index.js.map

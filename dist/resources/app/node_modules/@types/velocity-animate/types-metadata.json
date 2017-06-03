@@ -1,0 +1,22 @@
+{
+    "authors": "Greg Smith <https://github.com/smrq/>",
+    "libraryDependencies": [
+        "jquery"
+    ],
+    "moduleDependencies": [],
+    "libraryMajorVersion": 1,
+    "libraryMinorVersion": 2,
+    "typeScriptVersion": "2.0",
+    "libraryName": "Velocity",
+    "typingsPackageName": "velocity-animate",
+    "projectName": "http://velocityjs.org/",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "sourceBranch": "master",
+    "globals": [],
+    "declaredModules": [],
+    "files": [
+        "index.d.ts"
+    ],
+    "hasPackageJson": false,
+    "contentHash": "c1793b7f5702d21024737cb24bdfe78e8b32151b6097c77d8ef804141d47dd99"
+}

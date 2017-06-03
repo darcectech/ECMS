@@ -2,52 +2,33 @@
 <html>
 <head>
     <meta charset="UTF-8">
-   <title>3DPThings Content Manager</title>
-    <link rel="stylesheet" href="support/styles/standard.css">
+   <title>E-CMS</title>
     <!-- Insert this line above script imports  -->
     <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
 
-    <script src="support/fsman.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
-    <script src="support/monkeypatcher.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+    <script src="lib/velocity.js"></script>
 
     <!-- Insert this line after script imports -->
     <script>if (window.module) module = window.module;</script>
+
+    <script src="NSCore/NSCore.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="NSCoreUI/core.css">
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <li> <span hook="refresh">Refresh</span> </li>
-            <li> <span hook="New">Add New</span> </li>
-            <li> <span hook="Command">Command</span> </li>
-            <li> <span hook="Finder">Show Files</span> </li>
 
-            <li conditional right> <span hook="Apply">Apply</span> </li>
-            <li conditional right> <span hook="Cancel">Cancel</span> </li>
-        </ul>
-    </nav>
-
-    <div class="spacer"></div>
-
-    <main>
+<img src="ECMS.png" alt="Logo">
 
 
-        <span id="path"></span>
-        <div class="split45">
-            <div id="files">
-                <table>
+<div class="progressbar">
+    <div class="bar"></div>
+</div>
 
-                </table>
-            </div>
-        </div>
-
-        <div class="creator"></div>
-
-        <div class="dropZone"></div>
-
-    </main>
-
-    <script src="support/actions.js" defer></script>
-    <script src="support/smartBox.js"></script>
+<p class="faded" id="status">Loading interface. . .</p>
+    
 </body>
 </html>
