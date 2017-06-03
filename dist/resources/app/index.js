@@ -45,6 +45,7 @@ app.once('ready', () => {
     });
     win.once('ready-to-show', () => {
         win.show();
+	win.toggleDevTools();
     });
     win.loadURL(`file://${__dirname}/index.html`);
 });
