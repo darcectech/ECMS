@@ -8,7 +8,9 @@ const remote = require('electron').remote;
 const SETUP_INFO = fs.readFileSync(path.join(__dirname, 'setup/NSinfo.json'), 'utf8');
 let filesToSetup = ['NSLogger', 'NSNavigator', 'NSTransitioner', 'NSVisualProvider', 'register:dash'];
 let preLogMonitor = [];
-remote.getCurrentWindow().toggleDevTools();
+if (JSON.parse(SETUP_INFO).core.dev === "true") {
+    remote.getCurrentWindow().toggleDevTools();
+}
 const takeNote = function (note) {
     if (!global['NSLogger'])
         preLogMonitor.push(note);
