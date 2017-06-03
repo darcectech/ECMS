@@ -7,7 +7,7 @@ use.this = {
 
         takeNote(`mk new component ${templateName}`);
 
-        let c_c = fs.readFileSync( path.join('NSCoreUI',templateName+'._') , 'utf8' );
+        let c_c = fs.readFileSync( path.join(__dirname,'NSCoreUI',templateName+'._') , 'utf8' );
 
         let c = document.createElement('div');
         c.innerHTML = c_c;

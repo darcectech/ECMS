@@ -5,7 +5,7 @@
 use.this = {
     goto:function(page,fn){
         takeNote(`navigating to ${page}, callback provided: ${fn !== undefined}`);
-        let pContent = fs.readFileSync( path.join('NSCoreUI',page+'._') , 'utf8' );
+        let pContent = fs.readFileSync( path.join(__dirname,'NSCoreUI',page+'._') , 'utf8' );
 
         let NSTransitioner = global['NSTransitioner']; // fallback incase module wasnt loaded
 
