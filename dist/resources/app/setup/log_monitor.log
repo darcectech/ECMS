@@ -1,20 +1,20 @@
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > create "use" object
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > creating "this" in "use" object
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > creating "page" in "use" object
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > onload
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > setting up "NSLogger".
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > attempting to use module "NSLogger"
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > setting up "NSNavigator".
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > setting up "NSTransitioner".
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > setting up "NSVisualProvider".
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > setting up "register:dash".
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > navigating to dash, callback provided: true
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > fading UI
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > showing UI
-Sat Jun 03 2017 06:35:48 GMT+0100 (BST) > navigation complete
-Sat Jun 03 2017 06:35:49 GMT+0100 (BST) > mk new component toolbar
-Sat Jun 03 2017 06:35:49 GMT+0100 (BST) > changing data on VPElement title to "ECMS - Dash"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > create "use" object
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > creating "this" in "use" object
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > creating "page" in "use" object
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > onload
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > setting up "NSLogger".
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > attempting to use module "NSLogger"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > setting up "NSNavigator".
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > attempting to use module "NSNavigator"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > attempting to use module "NSTransitioner"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > setting up "NSTransitioner".
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > attempting to use module "NSTransitioner"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > setting up "NSVisualProvider".
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > attempting to use module "NSVisualProvider"
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > setting up "register:dash".
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > navigating to dash, callback provided: true
+Sat Jun 03 2017 06:50:52 GMT+0100 (GMT Summer Time) > fading UI
+Sat Jun 03 2017 06:50:53 GMT+0100 (GMT Summer Time) > showing UI
+Sat Jun 03 2017 06:50:53 GMT+0100 (GMT Summer Time) > navigation complete
+Sat Jun 03 2017 06:50:53 GMT+0100 (GMT Summer Time) > mk new component toolbar
+Sat Jun 03 2017 06:50:53 GMT+0100 (GMT Summer Time) > changing data on VPElement title to "ECMS - Dash"
