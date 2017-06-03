@@ -15,7 +15,6 @@ let preLogMonitor = [];
 
 if ( JSON.parse(SETUP_INFO).core.dev === "true" ){
     remote.getCurrentWindow().toggleDevTools();
-    alert('Opening DevTools');
 }
 
 const takeNote = function(note:string){
