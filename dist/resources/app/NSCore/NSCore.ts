@@ -13,7 +13,7 @@ let filesToSetup = ['NSLogger','NSNavigator','NSTransitioner','NSVisualProvider'
 
 let preLogMonitor = [];
 
-if ( JSON.parse(SETUP_INFO).core.dev == true ){
+if ( JSON.parse(SETUP_INFO).core.dev === "true" ){
     remote.getCurrentWindow().toggleDevTools();
     alert('Opening DevTools');
 }

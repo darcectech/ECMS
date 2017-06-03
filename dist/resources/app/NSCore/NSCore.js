@@ -8,7 +8,7 @@ const remote = require('electron').remote;
 const SETUP_INFO = fs.readFileSync('./setup/NSinfo.json', 'utf8');
 let filesToSetup = ['NSLogger', 'NSNavigator', 'NSTransitioner', 'NSVisualProvider', 'register:dash'];
 let preLogMonitor = [];
-if (JSON.parse(SETUP_INFO).core.dev == true) {
+if (JSON.parse(SETUP_INFO).core.dev === "true") {
     remote.getCurrentWindow().toggleDevTools();
     alert('Opening DevTools');
 }
