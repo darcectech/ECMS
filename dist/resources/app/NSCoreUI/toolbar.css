@@ -1,7 +1,7 @@
 
 #toolbar{
     height: var(--toolbar-height);
-    background: var(--toolbar-background);
+    background: transparent;
     -webkit-app-region: drag;
     position: absolute;
     top: 0;
@@ -15,25 +15,30 @@
     width: auto;
     position: absolute;
     -webkit-app-region: no-drag;
-    left:var(--toolbar-padding);
-    top: calc(var(--toolbar-padding) * 1.3);
+    left: calc((var(--nav-width) / 2) - ((calc(var(--toolbar-height) - (var(--toolbar-padding) * 2))) / 2));
+    top: calc(var(
+    --toolbar-padding) * 1);
 }
 
 #toolbar #search{
     position: absolute;
     height: calc(var(--toolbar-height) - (var(--toolbar-padding) * 2));
-    left: calc(var(--toolbar-height) - (var(--toolbar-padding) * -1));
+    left: calc(var(--nav-width) + var(--toolbar-padding));
     top: var(--toolbar-padding);
-    width: 200px;
+    width: 65px;
     -webkit-app-region: no-drag;
     background: var(--toolbar-search-background-before);
     padding: 4px;
-    border: none;
-    border-radius: 3px;
-    font-size: calc((var(--toolbar-padding) * 2px) + 2px);
     color: var(--toolbar-background);
     font-weight: 300;
-    transition:all .4s;
+    transition: all .4s;
+    border: none;
+    border-radius: 3px;
+    font-size: calc((var(--nav-width) / 3));
+}
+
+#toolbar #search.size{
+    width: calc(200px - var(--toolbar-padding));
 }
 
 #toolbar *:focus,#toolbar *:active{
@@ -41,13 +46,14 @@
 }
 
 #toolbar #search:focus{
-    background: var(--toolbar-search-background-after);
     color: gainsboro;
-    box-shadow: 0 0 12px -2px #676767;
+    box-shadow: 0 0 12px -2px #ffffff;
+    width: calc(200px - var(--toolbar-padding));
 }
 
-#toolbar #search::placeholder{
-    color:darkgray;
+#toolbar #search::-webkit-input-placeholder{
+    font-size: larger;
+    text-transform: capitalize;
 }
 
 button {
@@ -65,10 +71,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: smaller;
 }
 
 #toolbar button i.material-icons{
     vertical-align: middle;
+    font-size: inherit;
 }
 
 button.max {
@@ -107,4 +115,12 @@ button:hover{
     font-size: x-large;
     font-weight: 200;
     pointer-events: none;
+}
+
+#toolbar #search:focus:hover {
+    cursor: auto;
+}
+
+#toolbar #search:hover {
+    cursor: pointer;
 }

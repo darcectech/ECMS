@@ -1,7 +1,15 @@
 {
   "core":{
     "firstRun":"false",
-    "dev":"false"
+    "dev":"false",
+    "UUID":"c52e9ec2-8c33-41f6-8b51-d1623215d5e3"
+  },
+  "server":{
+    "host":"c15b7c383f796c5654de6d2dcc72d2cf22d80a67ee19251b132eda33fbf4188ab068fd98df1d147c1f7a78e73d3215d8gstc7yD3oXRf6YxdRKDSW70QHMBo5UjRrxTdXtR4ZU8=",
+    "username":"6b339b9cb048ebe9b7697c80e32987725949ce1b3a7da66733befdeb7a8ea70f1af6e8776deecf937164e516d506c24dYpxVVkTbUfii8Ag+onKbjg==",
+    "password":"04a274072e193abdc2469bfb562829a532fd7da58801b5767ad1985ac633018ef8ca57d774c5a0afeb55823b2c4787ceai718k291pgbgQQo9q5nFA==",
+    "port":"21",
+    "root":"/clickandbuilds/3dpthings/"
   },
   "NSNavigator":{
     "moduleFolders":["NSCore","lib"]

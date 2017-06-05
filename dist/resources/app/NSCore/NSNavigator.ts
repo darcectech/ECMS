@@ -3,7 +3,7 @@
  */
 
 use.this = {
-    goto:function(page,fn){
+    goto:function(page,fn,bod='body'){
         takeNote(`navigating to ${page}, callback provided: ${fn !== undefined}`);
         let pContent = fs.readFileSync( path.join(__dirname,'NSCoreUI',page+'._') , 'utf8' );
 
@@ -11,11 +11,36 @@ use.this = {
 
 
         NSTransitioner.fadeUI(()=>{
-            $('body')[0].innerHTML = pContent;
+            $(bod)[0].innerHTML = pContent;
             NSTransitioner.fadeInUI(fn);
 
             takeNote(`navigation complete`);
         });
+
+    },
+    changePage:function(pageName,fn,bod='.page'){
+
+        takeNote(`changing page to to ${pageName}, callback provided: ${fn !== undefined}. `);
+        let pContent = fs.readFileSync( path.join(__dirname,'NSCoreUI',pageName+'._') , 'utf8' );
+
+        let NSTransitioner = global['NSTransitioner']; // fallback incase module wasnt loaded
+
+
+        NSTransitioner.fadeUI(()=>{
+            $(bod)[0].innerHTML = pContent;
+            $('require',bod).each(function(i,a){
+                let t = a.getAttribute('type');
+                let s = a.getAttribute('source');
+
+                if (t.toLowerCase() === 'style'){
+                    NSCore.use('NSVisualProvider').injectStyleSheet(s,'#fileexplorer');
+                }
+            });
+            NSTransitioner.fadeInUI(fn,bod);
+
+            takeNote(`changePage complete`);
+        },bod);
+
 
     }
 };

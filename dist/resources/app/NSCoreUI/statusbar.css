@@ -3,10 +3,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: var(--toolbar-background);
-    color:gainsboro;
+    background: transparent;
+    color: grey;
     height: 20px;
-    padding-left: 6px;
+    padding-right: 6px;
     text-transform: capitalize;
     font-weight: 200;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

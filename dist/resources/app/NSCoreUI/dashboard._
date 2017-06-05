@@ -1,16 +1,20 @@
 
-<main id="dashboard" class="active">
+<main id="dashboard">
 
     <nav>
         <ul>
             <li onclick="toggleMenu()"> <span>Menu</span> <i class="material-icons">menu</i> </li>
-            <li> <span>Metrics</span> <i class="material-icons">show_chart</i> </li>
-            <li> <span>Files</span> <i class="material-icons">folder_open</i> </li>
-            <li> <span>Maintenance</span> <i class="material-icons">restore</i> </li>
-            <li> <span>Information</span> <i class="material-icons">info_outline</i> </li>
+            <li vp-target="metrics_button"> <span>Metrics</span> <i class="material-icons">show_chart</i> </li>
+            <li vp-target="files_button"> <span>Files</span> <i class="material-icons">folder_open</i> </li>
+            <li vp-target="maintenance_button"> <span>Maintenance</span> <i class="material-icons">restore</i> </li>
+            <li vp-target="information_button"> <span>Information</span> <i class="material-icons">info_outline</i> </li>
+            <li vp-target="Lincenses_button"> <span>Licenses</span> <i class="material-icons">assignment</i> </li>
+            <li onclick="devToolsRequested()"> <span>Debug</span> <i class="material-icons">bug_report</i> </li>
+            <li vp-target="build_button"> <span>Build</span> <i class="material-icons">build</i> </li>
         </ul>
     </nav>
 
     <div id="filter" onclick="toggleMenu()"></div>
 
+    <div class="page"></div>
 </main>

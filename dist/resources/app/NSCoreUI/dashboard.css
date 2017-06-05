@@ -9,14 +9,14 @@
 
 #dashboard nav{
     position: absolute;
-    background: #009688;
-    width: var(--toolbar-height);
+    background: #00BCD4;
+    width: var(--nav-width);
     left: 0;
-    height:100%;
+    height: calc(100% + 20px);
     z-index: 555;
     color: white;
     overflow: hidden;
-    padding-top: calc(var(     --toolbar-height) + var(--toolbar-padding));
+    padding-top: calc(var(--toolbar-height) + var(--toolbar-padding));
     transition: all .4s;
     top: 0;
 }
@@ -30,6 +30,8 @@
     min-width: 200px;
     right: 0;
     height: 100%;
+    transition: all .4s;
+    top: calc(var(--toolbar-height) + var(--toolbar-padding));
 }
 
 #dashboard nav ul li{
@@ -64,7 +66,7 @@
 
 #dashboard nav ul li:hover{
     background:rgba(28,28,28,0.1);
-    color: deepskyblue;
+    color: lightgray;
     cursor: pointer;
 }
 
@@ -84,4 +86,13 @@
 #dashboard.active #filter{
     opacity: .4;
     pointer-events: auto;
+}
+
+#dashboard.searching nav ul {
+    top: 80%;
+    opacity: 0;
+}
+
+#dashboard.active nav ul li:active span {
+    transform: scale(0.9);
 }

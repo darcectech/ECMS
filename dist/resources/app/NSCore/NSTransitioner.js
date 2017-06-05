@@ -2,15 +2,15 @@
  * Created by darylcecile on 03/06/2017.
  */
 use.this = {
-    fadeUI: function (fnc) {
+    fadeUI: function (fnc, sel = 'body') {
         takeNote(`fading UI`);
-        $('body').velocity({
+        $(sel).velocity({
             opacity: 0
         }, 400, fnc);
     },
-    fadeInUI: function (fnc) {
+    fadeInUI: function (fnc, sel = 'body') {
         takeNote(`showing UI`);
-        $('body').velocity({
+        $(sel).velocity({
             opacity: 1
         }, 400, fnc);
     }

@@ -7,7 +7,14 @@
 const fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
-const SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup/NSinfo.json'),'utf8');
+
+const VERSION = {
+    NAME:'Lima',
+    NUMBER:'1.0.12',
+    SERVICE:'3'
+};
+
+let SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup/NSinfo.json'),'utf8');
 
 let filesToSetup = ['NSLogger','NSNavigator','NSTransitioner','NSVisualProvider','register:dash'];
 
@@ -105,6 +112,11 @@ const use:ModuleObjects = function use(moduleName){
 
 };
 
+
+const NSCore = {
+    use:use
+};
+
 takeNote('creating "this" in "use" object');
 
 Object.defineProperty(use,'this',{
@@ -139,7 +151,8 @@ interface VPElements{
 }
 
 interface VPElement extends Element{
-    changeData?(eName:string,dataName:string,newValue:any):any
+    changeData?(eName:string,dataName:string,newValue:any):any,
+    target?(eName:string):HTMLElement|Element|null
 }
 
 const pages:any = {};
@@ -170,6 +183,12 @@ const minRequested = function(){
 
     takeNote('minRequested');
     remote.BrowserWindow.getFocusedWindow().minimize();
+};
+
+const devToolsRequested = function(){
+
+    remote.BrowserWindow.getFocusedWindow().openDevTools()
+
 };
 
 window.addEventListener('onerror',function(e:ErrorEvent){

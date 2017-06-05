@@ -1,0 +1,12 @@
+
+.page{
+    position: absolute;
+    z-index: 2;
+    left: var(--nav-width);
+    top: 0;
+    padding: var(--toolbar-height) var(--toolbar-padding) 0;
+    width: calc(100% - var(--nav-width));
+    bottom: 0;
+    overflow: hidden;
+    background: linear-gradient(to top,gainsboro calc(100% - var(--toolbar-height)),transparent var(--toolbar-height));
+}

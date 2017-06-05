@@ -1,24 +1,30 @@
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > create "use" object
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > creating "this" in "use" object
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > creating "page" in "use" object
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > onload
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > setting up "NSLogger".
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > attempting to use module "NSLogger"
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > setting up "NSNavigator".
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > setting up "NSTransitioner".
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > setting up "NSVisualProvider".
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > setting up "register:dash".
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > navigating to dash, callback provided: true
-Sat Jun 03 2017 19:15:19 GMT+0100 (BST) > fading UI
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > showing UI
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > navigation complete
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > mk new component toolbar
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > changing data on VPElement title to "ECMS - Dash"
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > mk new component statusbar
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > mk new component dashboard
-Sat Jun 03 2017 19:15:20 GMT+0100 (BST) > changing data on VPElement status to "ready"
-Sat Jun 03 2017 19:18:07 GMT+0100 (BST) > maxRequested
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > create "use" object
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > creating "this" in "use" object
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > creating "page" in "use" object
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > onload
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > setting up "NSLogger".
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > attempting to use module "NSLogger"
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > setting up "NSNavigator".
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > setting up "NSTransitioner".
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > setting up "NSVisualProvider".
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > setting up "register:dash".
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > navigating to dash, callback provided: true
+Sun Jun 04 2017 22:24:09 GMT+0100 (BST) > fading UI
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > showing UI
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > navigation complete
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > mk new component toolbar
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > mk new component statusbar
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > mk new component dashboard
+Sun Jun 04 2017 22:24:10 GMT+0100 (BST) > changing data on VPElement status to "v1.0.12 - 3"
+Sun Jun 04 2017 22:24:12 GMT+0100 (BST) > changing page to to fileexplorer, callback provided: true. 
+Sun Jun 04 2017 22:24:12 GMT+0100 (BST) > fading UI
+Sun Jun 04 2017 22:24:12 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Sun Jun 04 2017 22:24:12 GMT+0100 (BST) > showing UI
+Sun Jun 04 2017 22:24:12 GMT+0100 (BST) > changePage complete
+Sun Jun 04 2017 22:36:38 GMT+0100 (BST) > maxRequested
+Mon Jun 05 2017 04:34:32 GMT+0100 (BST) > closeRequested

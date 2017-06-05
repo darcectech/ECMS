@@ -11,6 +11,15 @@
   "devDependencies": {
     "electron": "^1.6.8"
   },
-  "os": ["darwin","win32"],
-  "files": ["/"]
+  "os": [
+    "darwin",
+    "win32"
+  ],
+  "files": [
+    "/"
+  ],
+  "dependencies": {
+    "mousetrap": "^1.6.1",
+    "simple-encryptor": "^1.1.0"
+  }
 }

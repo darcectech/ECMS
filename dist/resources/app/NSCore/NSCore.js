@@ -5,7 +5,12 @@
 const fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
-const SETUP_INFO = fs.readFileSync(path.join(__dirname, 'setup/NSinfo.json'), 'utf8');
+const VERSION = {
+    NAME: 'Lima',
+    NUMBER: '1.0.12',
+    SERVICE: '3'
+};
+let SETUP_INFO = fs.readFileSync(path.join(__dirname, 'setup/NSinfo.json'), 'utf8');
 let filesToSetup = ['NSLogger', 'NSNavigator', 'NSTransitioner', 'NSVisualProvider', 'register:dash'];
 let preLogMonitor = [];
 if (JSON.parse(SETUP_INFO).core.dev === "true") {
@@ -71,6 +76,9 @@ const use = function use(moduleName) {
         return fnc;
     }
 };
+const NSCore = {
+    use: use
+};
 takeNote('creating "this" in "use" object');
 Object.defineProperty(use, 'this', {
     set(v) {
@@ -112,6 +120,9 @@ const maxRequested = function () {
 const minRequested = function () {
     takeNote('minRequested');
     remote.BrowserWindow.getFocusedWindow().minimize();
+};
+const devToolsRequested = function () {
+    remote.BrowserWindow.getFocusedWindow().openDevTools();
 };
 window.addEventListener('onerror', function (e) {
     try {

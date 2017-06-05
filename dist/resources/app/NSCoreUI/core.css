@@ -2,15 +2,16 @@
 @import 'toolbar.css';
 @import 'statusbar.css';
 @import 'dashboard.css';
-
+@import 'pages.css';
 
 :root{
-    --toolbar-height:40px;
+    --nav-width:40px;
+    --toolbar-height:35px;
     --toolbar-padding:7px;
     --toolbar-button-size:calc(var(--toolbar-height) - (var(--toolbar-padding) * 2));
     --toolbar-background:rgba(28,28,28,0.6);
 
-    --toolbar-search-background-before:rgba(125, 125, 125, 0.5);;
+    --toolbar-search-background-before:rgba(90, 90, 90, 1);
     --toolbar-search-background-after:rgb(86, 86, 86);
 }
 
@@ -35,6 +36,8 @@ body{
     justify-content:center;
     align-items:center;
     flex-direction: column;
+    background: black;
+    transition: all .4s;
 }
 
 img[alt=Logo]{

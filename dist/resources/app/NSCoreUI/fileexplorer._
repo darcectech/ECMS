@@ -1,0 +1,14 @@
+<div id="fileexplorer">
+    <require type="style" source="file_explorer.css"></require>
+    <h2>File Explorer</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Type</th>
+        </tr>
+
+    </table>
+
+</div>

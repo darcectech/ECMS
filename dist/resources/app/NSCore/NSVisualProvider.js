@@ -51,6 +51,39 @@ use.this = {
             d = Math.floor(d / 16);
             return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
         });
+    },
+    injectStyleSheet: function (csspath, prefix, mediaQuery) {
+        let sheet = (function () {
+            let preexist = $(`style[path="${csspath}"]`);
+            if (preexist.length > 0) {
+                return preexist[0].sheet;
+            }
+            let style = document.createElement("style");
+            style.setAttribute("path", csspath);
+            if (mediaQuery) {
+                style.setAttribute("media", mediaQuery);
+            }
+            style.appendChild(document.createTextNode(""));
+            document.head.appendChild(style);
+            return style.sheet;
+        })();
+        function addCSSRule(selector, rules, index) {
+            if (prefix) {
+                selector = prefix + ' ' + selector;
+            }
+            if ("insertRule" in sheet) {
+                sheet.insertRule(selector + "{" + rules + "}", index);
+            }
+            else if ("addRule" in sheet) {
+                sheet.addRule(selector, rules, index);
+            }
+        }
+        let stylesheetContent = fs.readFileSync(path.join(__dirname, 'NSCoreUI', csspath), 'utf8');
+        let regex = /((.+?)[{]((?:.|\s)+?)[}])/gm;
+        stylesheetContent = stylesheetContent.replace(regex, function (w, m, sel, rul) {
+            addCSSRule(sel, rul, 0);
+            return w;
+        });
     }
 };
 //# sourceMappingURL=NSVisualProvider.js.map
