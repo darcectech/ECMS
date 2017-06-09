@@ -14,7 +14,7 @@ use.page = {
         $('#vAutoDev').prop('checked', s);
         $('#icon_prefix_root').val(p.server.root).trigger('autoresize');
         $('#icon_prefix_host').val(v.host).trigger('autoresize');
-        $('#icon_prefix_username').val(v.username).trigger('autoresize');
+        $('#icon_prefix_username').val(v.user).trigger('autoresize');
         $('#icon_prefix').val(v.password).trigger('autoresize');
         Materialize.updateTextFields();
         $('#saveButt').on('click', function () {
@@ -22,7 +22,7 @@ use.page = {
             // $('#vAutoDev').prop('checked')
             nssi.update('core', 'dev', $('#vAutoDev').prop('checked'), false);
             nssi.update('server', 'host', $('#icon_prefix_host').val(), true);
-            nssi.update('server', 'username', $('#icon_prefix_username').val(), true);
+            nssi.update('server', 'user', $('#icon_prefix_username').val(), true);
             nssi.update('server', 'password', $('#icon_prefix').val(), true);
             nssi.update('server', 'root', $('#icon_prefix_root').val(), false, true); // update root then push to file
             Materialize.toast('Settings Saved!', 2000);
