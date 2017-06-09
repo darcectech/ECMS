@@ -137,6 +137,34 @@ window.addEventListener('onerror', function (e) {
                 `);
     }
 });
+const chokidar = require('chokidar');
+class WatchSession {
+    constructor(fileToWatch) {
+        this.fileBeingWatched = "";
+        this.fileBeingWatched = fileToWatch;
+    }
+    startWatching(onChange) {
+        this.watcher = chokidar.watch(this.fileBeingWatched);
+        this.watcher.on('change', onChange);
+    }
+    endAndDispose() {
+        this.watcher.close();
+    }
+}
+let deleteFolderRecursive = function (path) {
+    if (fs.existsSync(path)) {
+        fs.readdirSync(path).forEach(function (file, index) {
+            var curPath = path + "/" + file;
+            if (fs.lstatSync(curPath).isDirectory()) {
+                deleteFolderRecursive(curPath);
+            }
+            else {
+                fs.unlinkSync(curPath);
+            }
+        });
+        fs.rmdirSync(path);
+    }
+};
 window.onload = function () {
     takeNote('onload');
     setTimeout(() => {

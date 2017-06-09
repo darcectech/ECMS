@@ -47,3 +47,36 @@ table tr>*:nth-child(2) {
 table tr:hover{
     color:#00BCD4;
 }
+
+
+input#file_filter {
+    -webkit-appearance: none;
+    border: 1px solid transparent;
+    font-size: large;
+    padding: 1px 5px;
+    border-radius: 0 5px 5px 0;
+    background: white;
+    position: absolute;
+    z-index: 3;
+    right: 8px;
+    color: gray;
+    top: calc(var(--nav-width) + var(--toolbar-height) + 8px);
+    font-weight: 400;
+}
+
+input#file_filter:focus{
+    outline:none;
+    border: 1px solid #00BCD4;
+}
+
+input#file_filter {
+    top: calc(var(--nav-width) + 6px) !important;
+    font-weight: 300 !important;
+    border-radius: 5px !important;
+}
+
+h2{
+    display:inline-flex !important;
+    margin-top:12px;
+    margin-bottom:5px;
+}

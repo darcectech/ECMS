@@ -28,6 +28,13 @@ use.this = {
 
         NSTransitioner.fadeUI(()=>{
             $(bod)[0].innerHTML = pContent;
+
+            $('script',bod).each(function(i,a){
+                console.log(a.innerHTML);
+                eval.call(a,a.innerHTML);
+                $(a).remove();
+            });
+
             $('require',bod).each(function(i,a){
                 let t = a.getAttribute('type');
                 let s = a.getAttribute('source');

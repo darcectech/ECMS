@@ -52,6 +52,82 @@ use.page = {
 
         });
 
+        controls.dashboard.target('services_button').addEventListener('click',function(){
+
+            if ( $('#services').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'services';
+            use.page('services');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('services',function(){
+                pages.services.main();
+            },'.page');
+
+        });
+
+        controls.dashboard.target('settings_button').addEventListener('click',function(){
+
+            if ( $('#settings').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'settings';
+            use.page('settings');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('settings',function(){
+                pages.settings.main();
+            },'.page');
+
+        });
+
+        controls.dashboard.target('maintenance_button').addEventListener('click',function(){
+
+            if ( $('#maintenance').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'maintenance';
+            use.page('maintenance');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('maintenance',function(){
+                pages.maintenance.main();
+            },'.page');
+
+        });
+
+        controls.dashboard.target('lincenses_button').addEventListener('click',function(){
+
+            if ( $('#licenses').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'licenses';
+            use.page('licenses');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('licenses',function(){
+                pages.licenses.main();
+            },'.page');
+
+        });
+
+        //updates_button
+
+        controls.dashboard.target('updates_button').addEventListener('click',function(){
+
+            $('.page').empty();
+
+            Materialize.toast('Checking for updates. . .',5000);
+
+
+
+        });
+
         let Mousetrap = require('mousetrap');
         Mousetrap.bind("#", function() { (<HTMLElement>controls.toolbar.target('searchbar')).focus() });
         Mousetrap.bind("f i n d", function() { (<HTMLElement>controls.toolbar.target('searchbar')).focus() });

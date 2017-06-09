@@ -46,14 +46,17 @@
 }
 
 #toolbar #search:focus{
-    color: gainsboro;
+    color: dimgray;
     box-shadow: 0 0 12px -2px #ffffff;
     width: calc(200px - var(--toolbar-padding));
+    background: var(--toolbar-search-background-after);
 }
 
 #toolbar #search::-webkit-input-placeholder{
     font-size: larger;
     text-transform: capitalize;
+    color:white;
+
 }
 
 button {

@@ -19,6 +19,9 @@
     "/"
   ],
   "dependencies": {
+    "@types/materialize-css": "^0.98.1",
+    "chokidar": "^1.7.0",
+    "ftp": "^0.3.10",
     "mousetrap": "^1.6.1",
     "simple-encryptor": "^1.1.0"
   }

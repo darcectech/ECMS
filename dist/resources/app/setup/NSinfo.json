@@ -1,17 +1,30 @@
 {
-  "core":{
-    "firstRun":"false",
-    "dev":"false",
-    "UUID":"c52e9ec2-8c33-41f6-8b51-d1623215d5e3"
-  },
-  "server":{
-    "host":"c15b7c383f796c5654de6d2dcc72d2cf22d80a67ee19251b132eda33fbf4188ab068fd98df1d147c1f7a78e73d3215d8gstc7yD3oXRf6YxdRKDSW70QHMBo5UjRrxTdXtR4ZU8=",
-    "username":"6b339b9cb048ebe9b7697c80e32987725949ce1b3a7da66733befdeb7a8ea70f1af6e8776deecf937164e516d506c24dYpxVVkTbUfii8Ag+onKbjg==",
-    "password":"04a274072e193abdc2469bfb562829a532fd7da58801b5767ad1985ac633018ef8ca57d774c5a0afeb55823b2c4787ceai718k291pgbgQQo9q5nFA==",
-    "port":"21",
-    "root":"/clickandbuilds/3dpthings/"
-  },
-  "NSNavigator":{
-    "moduleFolders":["NSCore","lib"]
-  }
+	"core": {
+		"firstRun": "false",
+		"dev": false,
+		"UUID": "c52e9ec2-8c33-41f6-8b51-d1623215d5e3"
+	},
+	"user":{
+		"firstName":"Richard",
+		"lastName":"Crumley",
+		"email":""
+	},
+	"server": {
+		"host": "8690ec00712453fd5bb513763e0e9b170bc46f7302d6a39b4cf5b53eca3156773a88bc3b135bad721456ce2236d96bf9OZJPdT7x9nO2j9avAJsjDDztsJ8+wSV+k7WSwDnQGfw=",
+		"user": "01a9d39a16dc839bb50480025ff4a18c0a91b19a3be75cd48c613bd28e64f2c0868d9c92c651fd3d5bd429cdae58c1612DMTeev3eUkqG9a8t8r3ng==",
+		"password": "70da189a8b1141349d2d681e03cd2854835e5616234ccd23b623c9a7308df67a772ba96fba24e83839e5bfbc64a7f6d1CHdQcgc6pgi9dF49yRqX5g==",
+		"port": "21",
+		"root": "/clickandbuilds/3dpthings/"
+	},
+	"NSNavigator": {
+		"moduleFolders": [
+			"NSCore",
+			"lib"
+		]
+	},
+	"release": "developers",
+	"services": [
+		"Net-Sync",
+		"Incremental-Updates"
+	]
 }

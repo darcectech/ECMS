@@ -1,0 +1,48 @@
+<div id="settings" material>
+    <h2>Settings</h2>
+
+    <div scroller xl>
+        <h5 class="title">Core</h5>
+        <!-- Switch -->
+        <div class="switch">
+            <label>
+                Turn off auto-dev
+                <input type="checkbox" id="vAutoDev">
+                <span class="lever"></span>
+                Automatically launch dev-tools on startup
+            </label>
+        </div>
+
+        <h5 class="title">Server</h5>
+        <div class="input-field">
+            <i class="material-icons prefix">cloud_queue</i>
+            <input id="icon_prefix_host" type="text">
+            <label for="icon_prefix_host">Host</label>
+        </div>
+        <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_prefix_username" type="text">
+            <label for="icon_prefix_username">Username</label>
+        </div>
+        <div class="input-field">
+            <i class="material-icons prefix">lock_outline</i>
+            <input id="icon_prefix" type="text">
+            <label for="icon_prefix">Password</label>
+        </div>
+        <div class="input-field">
+            <i class="material-icons prefix">folder_open</i>
+            <input id="icon_prefix_root" type="text">
+            <label for="icon_prefix_root">Root</label>
+        </div>
+
+        <h5 class="title">Modules</h5>
+        <div class="input-field col s12">
+            <select multiple>
+                <option value="" disabled selected>Choose your option</option>
+            </select>
+        </div>
+
+        <br>
+        <a class="cyan accent-4 waves-effect waves-light btn" id="saveButt"><i class="material-icons">save</i>Save</a>
+    </div>
+</div>

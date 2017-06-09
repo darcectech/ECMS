@@ -205,7 +205,36 @@ window.addEventListener('onerror',function(e:ErrorEvent){
     }
 });
 
+const chokidar = require('chokidar');
 
+class WatchSession{
+    public fileBeingWatched:string = "";
+    public watcher:any;
+    constructor(fileToWatch){
+        this.fileBeingWatched = fileToWatch;
+    }
+    startWatching(onChange){
+        this.watcher = chokidar.watch(this.fileBeingWatched);
+        this.watcher.on('change', onChange)
+    }
+    endAndDispose(){
+        this.watcher.close()
+    }
+}
+
+let deleteFolderRecursive = function(path) {
+    if( fs.existsSync(path) ) {
+        fs.readdirSync(path).forEach(function(file,index){
+            var curPath = path + "/" + file;
+            if(fs.lstatSync(curPath).isDirectory()) { // recurse
+                deleteFolderRecursive(curPath);
+            } else { // delete file
+                fs.unlinkSync(curPath);
+            }
+        });
+        fs.rmdirSync(path);
+    }
+};
 
 window.onload = function(){
     takeNote('onload');

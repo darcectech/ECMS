@@ -5,82 +5,86 @@
 use.page = {
     main:function(){
 
-        let rootInf = JSON.parse(SETUP_INFO);
+        let p = NSCore.use('NSSettings').STRUCTURE.server.root;
+        pages.fileexplorer.loadDir(p);
 
-        let creds = rootInf.server;
+        // youAreHere
+    },
+    loadDir(dir){
+        pages.fileexplorer.pathLoaded = dir;
+        NSCore.use('NSServerInterface').listFileInFolder(dir);
+        pages.fileexplorer.enableFilter();
+        pages.fileexplorer.setBreadCrumbs(dir);
+    },
+    setBreadCrumbs(dir){
 
-        let creds_h = "";
-        let creds_u = "";
-        let creds_p = "";
+        let bc = $('#youAreHere');
 
-        let encryptor = require('simple-encryptor');
+        let p = dir;
+        let mex = dir;
+        let crumbs = [];
 
-        //set up one layer encryption
+        bc.empty();
 
-        if (rootInf.core.UUID === ""){
-            rootInf.core.UUID = (function () { // Public Domain/MIT
-                let d = new Date().getTime();
-                if (typeof performance !== 'undefined' && typeof performance.now === 'function') {
-                    d += performance.now(); //use high-precision timer if available
+        let rooot = NSCore.use('NSSettings').STRUCTURE.server.root;
+
+        while (mex.length > 0){
+            console.log(p);
+            if (p === rooot || p+'/' === rooot){
+                crumbs.push(p);
+                break;
+            }
+            mex = path.basename(p);
+            crumbs.push(mex);
+            p = path.dirname(p);
+        }
+
+        let pathSoFar = "";
+
+        crumbs.reverse();
+
+        crumbs.some(function(e){
+            pathSoFar = pathSoFar + '/' + e;
+            pathSoFar = pathSoFar.replace('//','/');
+            if (bc.height() > $('#filter_box').height()){
+                return true;
+            }
+            else{
+                if (e.length <= 0 || e === rooot || e+'/' === rooot){
+                    e = '...';
+                    bc.append( $(`<a href="#!" class="breadcrumb" data-p="${rooot}">${e}</a>`).on('click',function(){
+                        pages.fileexplorer.loadDir(rooot);
+                    }) );
                 }
-                return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-                    let r = (d + Math.random() * 16) % 16 | 0;
-                    d = Math.floor(d / 16);
-                    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
-                });
-            })();
+                else{
+                    bc.append( $(`<a href="#!" class="breadcrumb" data-p="${pathSoFar}">${e}</a>`).on('click',function(){
+                        pages.fileexplorer.loadDir( $(this).attr('data-p') );
+                    }) );
+                }
+                return false;
+            }
+        });
 
-            creds_h = creds.host;
-            creds_u = creds.username;
-            creds_p = creds.password;
+    },
+    enableFilter(){
 
-            encryptor = encryptor(rootInf.core.UUID);
-            rootInf.server.host = encryptor.encrypt(creds.host);
-            rootInf.server.username = encryptor.encrypt(creds.username);
-            rootInf.server.password = encryptor.encrypt(creds.password);
-
-            let s = JSON.stringify(rootInf, null, '\t');
-            fs.writeFileSync( path.join(__dirname,'setup','NSinfo.json') , s , 'utf8' );
-
-            SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup','NSinfo.json'),'utf8');
-        }
-        else{
-
-            encryptor = encryptor(rootInf.core.UUID);
-
-            creds_h = encryptor.decrypt(creds.host);
-            creds_u = encryptor.decrypt(creds.username);
-            creds_p = encryptor.decrypt(creds.password);
-
-        }
-
-        //debug
-        // if (VERSION) return;
+        $('#file_filter').on('input',function(){
 
 
-        let config = {host: creds_h, username: creds_u, password: creds_p };
-        let SFTPClient = require('sftp-promises');
-        let sftp = new SFTPClient(config);
+            $('table tr td:nth-child(1)').each(function(i,e){
 
-        sftp.ls(rootInf.server.root).then(function(list) {
-            console.log(list);
+                if ( e.innerHTML.toLowerCase().indexOf( $('#file_filter').val().toLowerCase() ) < 0){
+                    $(e.parentElement).hide();
+                }
+                else{
+                    $(e.parentElement).show();
+                }
 
-            list.entries.forEach(function(entry){
-                $('#fileexplorer').find('table tbody').append(`
-                        <tr>
-                             <td>${entry.filename}</td>
-                             <td>${ (entry.longname.indexOf('d') === 0 ? 'Folder' : 'File') }</td>
-                             <td>${entry.attrs.size}</td>
-                        </tr>
-                `);
             });
+
 
         });
 
-        /*<tr>
-         <td>Example</td>
-         <td>12mb</td>
-         <td>Folder</td>
-         </tr>*/
-    }
+    },
+    pathLoaded:''
 };

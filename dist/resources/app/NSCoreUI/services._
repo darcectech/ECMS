@@ -1,0 +1,45 @@
+<div id="services" material>
+    <require type="style" source="services.css"></require>
+    <h2>Services</h2>
+
+
+    <div scroller xl>
+        <div class="row">
+            <div class="card-panel cyan accent-4">
+                  <span class="white-text">
+                      Using this page, you can set up additional services you might need. By default, only a handful are enabled in order to make
+                      the application start up faster. To add more services, enter the service names below.
+                  </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="chips chips-autocomplete"></div>
+        </div>
+        <div class="row">
+            <table>
+                <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Developer</td>
+                    <td>Enables developer functionality. Please note that this should only be enabled if you know what you are doing</td>
+                </tr>
+                <tr>
+                    <td>Net-Sync</td>
+                    <td>Maintains connection with server instead of performing batch requests</td>
+                </tr>
+                <tr>
+                    <td>Incremental-Updates</td>
+                    <td>Automatically start, stop and resume updates in the background</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
