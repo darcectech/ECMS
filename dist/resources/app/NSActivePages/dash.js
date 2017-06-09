@@ -83,6 +83,29 @@ use.page = {
         controls.dashboard.target('updates_button').addEventListener('click', function () {
             $('.page').empty();
             Materialize.toast('Checking for updates. . .', 5000);
+            $.get('https://gist.githubusercontent.com/darcectech/82ccedea98539b2909f0a7eb85cfb0c4/raw/c31136b872b234b309c1e4a87034e3e3fb60d9d9/ECMS_US.js', function (r) {
+                console.log(r);
+                let localUS = fs.readFileSync(path.join(__dirname, 'setup', 'updateScript.js'), 'utf8');
+                let remoteUS = r;
+                if (remoteUS.trim() === localUS.trim()) {
+                    Materialize.toast('Software Up to date!', 5000);
+                }
+                else {
+                    fs.writeFileSync(path.join(__dirname, 'setup', 'updateScript.js'), remoteUS, 'utf8');
+                    NSCore.use('NSModal').showModal({
+                        header: 'New update found!',
+                        message: 'Would you like to begin update?',
+                        yes: {
+                            text: 'Yes!',
+                            fn: function () { eval(r); }
+                        },
+                        no: {
+                            text: 'No thanks!',
+                            fn: function () { }
+                        }
+                    });
+                }
+            }, 'text');
         });
         let Mousetrap = require('mousetrap');
         Mousetrap.bind("#", function () { controls.toolbar.target('searchbar').focus(); });
