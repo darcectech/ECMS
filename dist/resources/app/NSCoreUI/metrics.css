@@ -10,7 +10,14 @@
     width: 100%;
 }
 
+#metrics .chart-container.half{
+    display: inline-block;
+    width: 45%;
+    vertical-align: bottom;
+}
+
 :root{
-    --b : rgba(212, 182, 0, 0.2);
-    --c : rgba(255, 20, 147, 0.21)
+    --c : rgba(255, 20, 147, 0.21);
+    --d : rgba(0, 255, 10, 0.2);
+    --f : rgba(232, 255, 0, 0.2);
 }

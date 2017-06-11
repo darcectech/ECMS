@@ -124,6 +124,7 @@ img[alt=Logo]{
     display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
+    /* flex-wrap: wrap; */
 }
 
 [material] h5{

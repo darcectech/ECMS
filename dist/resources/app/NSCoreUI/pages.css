@@ -27,3 +27,20 @@
     bottom: 0;
 }
 
+#metrics .chart-container {
+    position: relative;
+    /* margin: auto; */
+    height: 50%;
+    width: 100%;
+}
+
+#metrics .chart-container.half{
+    display: inline-block;
+    width: 50%;
+    vertical-align: bottom;
+}
+
+#metrics [scroller][xl] {
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -5,7 +5,7 @@
 use.page = {
     main:function(){
 
-        this.fetchSiteloadData('webex.com',function(data:Array<any>){
+        this.fetchSiteloadData('3dpthings.com',function(data:Array<any>){
 
             let datasetA = {};
             let datasetB = {
@@ -23,6 +23,8 @@ use.page = {
                 "Dec":0
             };
 
+            let sessionCount = {};
+
             /*
              locale = "en-gb";
              d = new Date(Date.parse('2017-06-11 19:00:39'))
@@ -30,6 +32,8 @@ use.page = {
              */
 
             data.forEach(function(rec){
+                if (rec['PageID'].indexOf('?') > -1) rec['PageID'] = rec['PageID'].split('?')[0];
+
                 if (datasetA[ rec['PageID'] ] !== undefined){
 
                     if (Array.isArray(datasetA[ rec['PageID'] ])){
@@ -59,7 +63,31 @@ use.page = {
                 let d = new Date(Date.parse(rec['LastActivity']));
                 let month = d.toLocaleString(locale, { month: "short" });
                 datasetB[month] += 1;
+
+                if (sessionCount[ rec['SessionUID'] ]){
+                    sessionCount[ rec['SessionUID'] ] += 1;
+                }
+                else{
+                    sessionCount[ rec['SessionUID'] ] = 1;
+                }
+
             });
+
+            let uniqueSessions = Object.keys(sessionCount).length;
+            let repeatSessions = 0;
+
+            Object.keys(sessionCount).forEach(function (sesh) {
+
+                repeatSessions += sessionCount[sesh]
+
+            });
+
+            repeatSessions = repeatSessions - uniqueSessions;
+
+            let datasetC = {
+                "UniqueSessions":uniqueSessions,
+                "RepeatSessions":repeatSessions
+            };
 
             // calcAverages
 
@@ -75,9 +103,11 @@ use.page = {
 
             console.log(datasetA,data);
             console.log(datasetB,data);
+            console.log(datasetC,sessionCount);
 
             pages.metrics.buildChartA(datasetA);
             pages.metrics.buildChartB(datasetB);
+            pages.metrics.buildChartC(datasetC);
 
         });
 
@@ -118,6 +148,11 @@ use.page = {
                     gridLines: {
                         display: true,
                         color: "rgba(0, 188, 212,0.2)"
+                    },
+                    ticks: {
+                        callback: function(value, index, values) {
+                            return value + 'ms';
+                        }
                     }
                 }],
                 xAxes: [{
@@ -155,6 +190,9 @@ use.page = {
                     gridLines: {
                         display: true,
                         color: "rgba(255, 20, 147,0.2)"
+                    },
+                    ticks:{
+                        stepSize: 2
                     }
                 }],
                 xAxes: [{
@@ -166,6 +204,30 @@ use.page = {
         };
 
         global['Chart'].Line('chartB', {
+            options: options,
+            data: data
+        });
+    },
+    buildChartC:function(datavalues:any){
+        let data = {
+            labels: Object.keys(datavalues),
+            datasets: [{
+                label: "Sessions",
+                backgroundColor: ["rgba(232, 255, 0, 0.2)","rgba(0, 255, 10, 0.2)"],
+                borderColor: ["rgba(232, 255, 0, 1)","rgba(0, 255, 10, 1)"],
+                borderWidth: 2,
+                hoverBackgroundColor: ["rgba(232, 255, 0, 0.4)","rgba(0, 255, 10, 0.4)"],
+                hoverBorderColor: ["rgba(232, 255, 0, 1)","rgba(0, 255, 10, 1)"],
+                data: Object.values(datavalues),
+            }]
+        };
+
+        let options = {
+            maintainAspectRatio: false
+
+        };
+
+        global['Chart'].Doughnut('chartC', {
             options: options,
             data: data
         });
