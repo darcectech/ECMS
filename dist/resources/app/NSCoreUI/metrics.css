@@ -1,0 +1,16 @@
+
+#metrics canvas {
+    border: 1px dotted red;
+}
+
+#metrics .chart-container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 100%;
+}
+
+:root{
+    --b : rgba(212, 182, 0, 0.2);
+    --c : rgba(255, 20, 147, 0.21)
+}

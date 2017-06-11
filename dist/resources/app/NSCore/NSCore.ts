@@ -16,7 +16,15 @@ const VERSION = {
 
 let SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup/NSinfo.json'),'utf8');
 
-let filesToSetup = ['NSLogger','NSNavigator','NSTransitioner','NSVisualProvider','register:dash'];
+let filesToSetup = [
+    'NSLogger',
+    'NSNavigator',
+    'NSTransitioner',
+    'NSVisualProvider',
+    'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js',
+    'register:dash'
+];
 
 let preLogMonitor = [];
 
@@ -236,34 +244,122 @@ let deleteFolderRecursive = function(path) {
     }
 };
 
-window.onload = function(){
-    takeNote('onload');
-    setTimeout(()=>{
-        filesToSetup.forEach(function(file){
+let loadScript = function(file:string,isLocal:boolean=true){
 
-            takeNote(`setting up "${file}".`);
+    return new Promise((resolve,reject)=>{
 
+        takeNote(`setting up "${file}".`);
+
+        if (isLocal===true){
             if (file.indexOf('register:')===0){
-                file = file.split(':')[1];
-                lastModuleName = file;
-                use.page(file);
-                lastModuleName = '';
+                try{
+                    file = file.split(':')[1];
+                    lastModuleName = file;
+                    use.page(file);
+                    lastModuleName = '';
+                    resolve();
+                }
+                catch(s){
+                    reject(s);
+                }
             }
             else{
-                global[file] = use(file);
+                try{
+                    global[file] = use(file);
+                    resolve();
+                }
+                catch (s){
+                    reject(s);
+                }
             }
-            let p = $(".progressbar");
-            let pw = (p.width() / 100) * (100 / filesToSetup.length);
-            let pb = p.find('.bar');
-            prog_start += pw;
-            pb.width( prog_start );
+        }
+        else{
+            $.getScript(file,(script, textStatus, jqXHR)=>{
+                if (textStatus.indexOf('timeout') > -1 || textStatus.indexOf('error') > -1){
+                    reject(textStatus);
+                }
+                else{
+                    resolve(textStatus);
+                }
+            });
+        }
+
+    });
+};
+
+let progressIncrementAmount = -1;
+let fileToSetup_PointerIndex = 0;
+
+let getProgressIncrement = function () {
+    if (progressIncrementAmount === -1){
+        let p = $(".progressbar");
+        let pw = (p.width() / 100) * (100 / filesToSetup.length);
+        progressIncrementAmount = pw;
+        return pw;
+    }
+    else{
+        return progressIncrementAmount;
+    }
+};
+
+let incrementProgress = function(){
+    let p = $(".progressbar");
+    let pb = p.find('.bar');
+    prog_start += getProgressIncrement();
+    pb.width( prog_start );
+};
+
+let nextScript = function(){
+    incrementProgress();
+    if (fileToSetup_PointerIndex === filesToSetup.length){
+        //finished
+        global['NSNavigator']['goto']('dash',function(){
+            pages.dash.main();
+        });
+    }
+    else{
+        let scriptToLoad = filesToSetup[fileToSetup_PointerIndex];
+        loadScript(scriptToLoad,(scriptToLoad.indexOf('http') !== 0)).then(function(){
+            nextScript(); // succeed
+        },function() {
+            takeNote('Failed to load a script. Skipping. . .');
+            nextScript(); // failed
         });
 
-        setTimeout(function(){
-            global['NSNavigator']['goto']('dash',function(){
-                pages.dash.main();
-            });
-        },10);
-        window.onload = null;
-    },1000);
+        fileToSetup_PointerIndex++;
+    }
 };
+
+nextScript();
+
+// window.onload = function(){
+//     takeNote('onload');
+//     setTimeout(()=>{
+//         filesToSetup.forEach(function(file){
+//
+//             takeNote(`setting up "${file}".`);
+//
+//             if (file.indexOf('register:')===0){
+//                 file = file.split(':')[1];
+//                 lastModuleName = file;
+//                 use.page(file);
+//                 lastModuleName = '';
+//             }
+//             else{
+//                 global[file] = use(file);
+//             }
+//             let p = $(".progressbar");
+//             let pw = (p.width() / 100) * (100 / filesToSetup.length);
+//             let pb = p.find('.bar');
+//             prog_start += pw;
+//             pb.width( prog_start );
+//         });
+//
+//         setTimeout(function(){
+//             global['NSNavigator']['goto']('dash',function(){
+//                 pages.dash.main();
+//             });
+//         },10);
+//         window.onload = null;
+//     },1000);
+// };

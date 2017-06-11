@@ -116,6 +116,21 @@ use.page = {
 
         });
 
+        controls.dashboard.target('metrics_button').addEventListener('click',function(){
+
+            if ( $('#metrics').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'metrics';
+            use.page('metrics');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('metrics',function(){
+                pages.metrics.main();
+            },'.page');
+
+        });
         //updates_button
 
         controls.dashboard.target('updates_button').addEventListener('click',function(){
