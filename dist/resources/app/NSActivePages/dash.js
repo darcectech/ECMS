@@ -91,33 +91,6 @@ use.page = {
             }, '.page');
         });
         //updates_button
-        controls.dashboard.target('updates_button').addEventListener('click', function () {
-            $('.page').empty();
-            Materialize.toast('Checking for updates. . .', 5000);
-            $.get('https://gist.githubusercontent.com/darcectech/82ccedea98539b2909f0a7eb85cfb0c4/raw/c31136b872b234b309c1e4a87034e3e3fb60d9d9/ECMS_US.js', function (r) {
-                console.log(r);
-                let localUS = fs.readFileSync(path.join(__dirname, 'setup', 'updateScript.js'), 'utf8');
-                let remoteUS = r;
-                if (remoteUS.trim() === localUS.trim()) {
-                    Materialize.toast('Software Up to date!', 5000);
-                }
-                else {
-                    fs.writeFileSync(path.join(__dirname, 'setup', 'updateScript.js'), remoteUS, 'utf8');
-                    NSCore.use('NSModal').showModal({
-                        header: 'New update found!',
-                        message: 'Would you like to begin update?',
-                        yes: {
-                            text: 'Yes!',
-                            fn: function () { eval(r); }
-                        },
-                        no: {
-                            text: 'No thanks!',
-                            fn: function () { }
-                        }
-                    });
-                }
-            }, 'text');
-        });
         let Mousetrap = require('mousetrap');
         Mousetrap.bind("#", function () { controls.toolbar.target('searchbar').focus(); });
         Mousetrap.bind("f i n d", function () { controls.toolbar.target('searchbar').focus(); });
@@ -127,6 +100,44 @@ use.page = {
         Mousetrap.bind(['command+k', 'ctrl+k'], function () {
             controls.dashboard.target('files_button').click();
         });
+        let manifest = JSON.parse(fs.readFileSync(path.join(__dirname, 'manifest.json'), 'utf8'));
+        let expDate = new Date(VERSION.EXPIRE).getTime() / 1000;
+        let nowDate = Date.now() / 1000;
+        let updatorObject = NSCore.use('NSUpdator');
+        let remoteVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER, VERSION.SERVICE);
+        let localVersion = updatorObject.convertUpdateToNumeric(manifest.Number, manifest.Service);
+        if (nowDate >= expDate && remoteVersion > localVersion) {
+            Materialize.toast('Packages out of date', 2000);
+            NSCore.use('NSModal').showModal({
+                header: "An update is available",
+                message: `
+                    This update can take up to 10min, and should not be interupted!
+                    Would you like to install the update?
+                    
+                    (We will let you know when it is done)
+                    `,
+                yes: {
+                    text: "Yes", fn: function () { }
+                },
+                no: {
+                    text: "Nope", fn: function () { }
+                }
+            }).then(function (v) {
+                if (v === true)
+                    updatorObject.beginUpdate(function () {
+                        NSCore.use('NSModal').showModal({
+                            header: "Update Complete!",
+                            message: `
+                    The update process has completed! Next time you open this program, you will be using the latest version.
+                    `,
+                            yes: {
+                                text: "Okay", fn: function () { }
+                            }
+                        });
+                    });
+            }).catch(function (c) {
+            });
+        }
     }
 };
 //# sourceMappingURL=dash.js.map

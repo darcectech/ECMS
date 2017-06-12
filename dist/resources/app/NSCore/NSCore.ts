@@ -11,7 +11,7 @@ const _PRIV_fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
 
-let enableProxies = false;
+let enableProxies = true;
 
 
 const fs =_PRIV_fs; //proxyFS(_PRIV_fs);//_PRIV_fs;
@@ -19,14 +19,30 @@ const fs =_PRIV_fs; //proxyFS(_PRIV_fs);//_PRIV_fs;
 fs['readFileSync'] = proxyFS_Read(fs['readFileSync']);
 
 
-
-delete window['proxyFS'];
-
 const VERSION = {
     NAME:'Lima',
-    NUMBER:'1.0.12',
-    SERVICE:'3'
+    NUMBER:'1.2.26',
+    SERVICE:'23',
+    EXPIRE:"12 JUN 2017"
 };
+
+let is_Online:Boolean = true;
+
+Object.defineProperty(window,'isOnline',{
+    get(){
+        return is_Online;
+    },
+    set(v){
+        is_Online = v;
+        enableProxies = v;
+    }
+});
+
+declare let isOnline:boolean;
+
+window.addEventListener('offline', function(e) { isOnline=false });
+
+window.addEventListener('online', function(e) { isOnline=true });
 
 let SETUP_INFO = fs.readFileSync( path.join(__dirname,'setup/NSinfo.json'),'utf8');
 
@@ -327,8 +343,6 @@ let nextScript = function(){
     incrementProgress();
     if (fileToSetup_PointerIndex === filesToSetup.length){
         //finished
-        enableProxies = true;
-
         global['NSNavigator']['goto']('dash',function(){
             pages.dash.main();
         });
