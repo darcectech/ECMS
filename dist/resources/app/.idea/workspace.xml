@@ -21,7 +21,7 @@
       <file leaf-file-name="dash.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
+            <state relative-caret-position="-407">
               <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
@@ -31,11 +31,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metrics.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NSActivePages/metrics.ts">
+      <file leaf-file-name="NSCore.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NSCore/NSCore.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2910">
-              <caret line="194" column="35" lean-forward="false" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+            <state relative-caret-position="143">
+              <caret line="329" column="29" lean-forward="false" selection-start-line="329" selection-start-column="29" selection-end-line="329" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,7 +151,6 @@
         <option value="$PROJECT_DIR$/NSCore/NSRegister.ts" />
         <option value="$PROJECT_DIR$/lib/velocity.js" />
         <option value="$PROJECT_DIR$/setup/log_monitor.log" />
-        <option value="$PROJECT_DIR$/index.ts" />
         <option value="$PROJECT_DIR$/NSCore/NSLogger.ts" />
         <option value="$PROJECT_DIR$/NSCoreUI/statusbar._" />
         <option value="$PROJECT_DIR$/NSCoreUI/dash._" />
@@ -164,17 +183,18 @@
         <option value="$PROJECT_DIR$/NSCoreUI/maintenance._" />
         <option value="$PROJECT_DIR$/NSCore/NSModal.ts" />
         <option value="$PROJECT_DIR$/NSCore/NSServerInterface.ts" />
-        <option value="$PROJECT_DIR$/NSCoreUI/dashboard._" />
         <option value="$PROJECT_DIR$/NSActivePages/settings.ts" />
         <option value="$PROJECT_DIR$/setup/updateScript.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/NSCore/NSCore.ts" />
         <option value="$PROJECT_DIR$/NSActivePages/dash.ts" />
         <option value="$PROJECT_DIR$/NSCoreUI/metrics.css" />
         <option value="$PROJECT_DIR$/NSCoreUI/metrics._" />
         <option value="$PROJECT_DIR$/NSCoreUI/core.css" />
         <option value="$PROJECT_DIR$/NSCoreUI/pages.css" />
         <option value="$PROJECT_DIR$/NSActivePages/metrics.ts" />
+        <option value="$PROJECT_DIR$/index.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/NSCoreUI/dashboard._" />
+        <option value="$PROJECT_DIR$/NSCore/NSCore.ts" />
       </list>
     </option>
   </component>
@@ -255,6 +275,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NSCoreUI" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -423,12 +457,12 @@
       <workItem from="1497022965482" duration="1240000" />
       <workItem from="1497038455065" duration="2000" />
       <workItem from="1497198602875" duration="7152000" />
-      <workItem from="1497214417609" duration="2708000" />
+      <workItem from="1497214417609" duration="9204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113261000" />
+    <option name="totallyTimeSpent" value="119757000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,9 +475,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17156473" sideWeight="0.43469387" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17156473" sideWeight="0.43469387" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -610,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="477" column="10" lean-forward="false" selection-start-line="477" selection-start-column="10" selection-end-line="477" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NSCoreUI/settings._">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -724,40 +752,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NSCore/NSCore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2864">
           <caret line="3" column="45" lean-forward="false" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup/log_monitor.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NSCore/NSCore.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="250" column="42" lean-forward="false" selection-start-line="250" selection-start-column="42" selection-end-line="250" selection-end-column="42" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -772,13 +771,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="189" column="4" lean-forward="false" selection-start-line="189" selection-start-column="4" selection-end-line="189" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NSCoreUI/dashboard._">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="87" lean-forward="false" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+            <marker date="1496982877000" expanded="true" signature="529:758" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -793,17 +789,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-            <marker date="1497201661000" expanded="true" signature="339:355" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -873,6 +859,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2910">
           <caret line="194" column="35" lean-forward="false" selection-start-line="194" selection-start-column="35" selection-end-line="194" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-407">
+          <caret line="126" column="32" lean-forward="false" selection-start-line="126" selection-start-column="32" selection-end-line="126" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+            <marker date="1497201661000" expanded="true" signature="339:355" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="5540" column="13" lean-forward="false" selection-start-line="5540" selection-start-column="13" selection-end-line="5540" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup/log_monitor.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCoreUI/dashboard._">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCore/NSCore.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="329" column="29" lean-forward="false" selection-start-line="329" selection-start-column="29" selection-end-line="329" selection-end-column="29" />
           <folding />
         </state>
       </provider>

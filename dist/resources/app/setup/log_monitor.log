@@ -1,128 +1,24 @@
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > create "use" object
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > creating "this" in "use" object
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > creating "page" in "use" object
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "NSLogger".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > attempting to use module "NSLogger"
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "NSNavigator".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "NSTransitioner".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "NSVisualProvider".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > setting up "register:dash".
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > navigating to dash, callback provided: true
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:26:18 GMT+0100 (BST) > navigation complete
-Sun Jun 11 2017 22:26:19 GMT+0100 (BST) > mk new component toolbar
-Sun Jun 11 2017 22:26:19 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
-Sun Jun 11 2017 22:26:19 GMT+0100 (BST) > mk new component statusbar
-Sun Jun 11 2017 22:26:19 GMT+0100 (BST) > mk new component dashboard
-Sun Jun 11 2017 22:26:19 GMT+0100 (BST) > changing data on VPElement status to "v1.0.12 - 3"
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:26:22 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:27:01 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:27:01 GMT+0100 (BST) > changing page to to settings, callback provided: true. 
-Sun Jun 11 2017 22:27:01 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:27:01 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:27:01 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:27:02 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:27:02 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Sun Jun 11 2017 22:27:02 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:27:02 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:27:56 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:27:56 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:27:56 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:27:57 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:27:57 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:27:57 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:28:55 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:28:55 GMT+0100 (BST) > changing page to to settings, callback provided: true. 
-Sun Jun 11 2017 22:28:55 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:28:56 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:29:00 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:29:00 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:29:00 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:29:01 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:29:01 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:29:01 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:31:16 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:31:16 GMT+0100 (BST) > changing page to to services, callback provided: true. 
-Sun Jun 11 2017 22:31:16 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:31:17 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:31:17 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:31:17 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:31:17 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:31:18 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:31:54 GMT+0100 (BST) > attempting to use module "NSModal"
-Sun Jun 11 2017 22:31:59 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:31:59 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:31:59 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:32:00 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:32:00 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:32:00 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:32:57 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:32:57 GMT+0100 (BST) > changing page to to licenses, callback provided: true. 
-Sun Jun 11 2017 22:32:57 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:32:57 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:32:57 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:32:58 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:32:58 GMT+0100 (BST) > attempting to use module "NSLicense"
-Sun Jun 11 2017 22:32:59 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:32:59 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:32:59 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:32:59 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:33:00 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:33:00 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:33:19 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:33:19 GMT+0100 (BST) > changing page to to licenses, callback provided: true. 
-Sun Jun 11 2017 22:33:19 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:33:20 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:33:20 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:33:20 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:33:20 GMT+0100 (BST) > attempting to use module "NSLicense"
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:33:21 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > changing page to to licenses, callback provided: true. 
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:42:05 GMT+0100 (BST) > attempting to use module "NSLicense"
-Sun Jun 11 2017 22:42:06 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:42:06 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Sun Jun 11 2017 22:42:06 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:42:07 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Sun Jun 11 2017 22:42:07 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:42:07 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:45:55 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Sun Jun 11 2017 22:45:55 GMT+0100 (BST) > changing page to to settings, callback provided: true. 
-Sun Jun 11 2017 22:45:55 GMT+0100 (BST) > fading UI
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > showing UI
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > changePage complete
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > attempting to use module "NSSettings"
-Sun Jun 11 2017 22:45:56 GMT+0100 (BST) > attempting to use module "NSSettings"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > create "use" object
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > creating "this" in "use" object
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > creating "page" in "use" object
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "NSLogger".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > attempting to use module "NSLogger"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "NSNavigator".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "NSTransitioner".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "NSVisualProvider".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > setting up "register:dash".
+Mon Jun 12 2017 01:13:12 GMT+0100 (BST) > navigating to dash, callback provided: true
+Mon Jun 12 2017 01:13:13 GMT+0100 (BST) > fading UI
+Mon Jun 12 2017 01:13:13 GMT+0100 (BST) > showing UI
+Mon Jun 12 2017 01:13:13 GMT+0100 (BST) > navigation complete
+Mon Jun 12 2017 01:13:13 GMT+0100 (BST) > mk new component toolbar
+Mon Jun 12 2017 01:13:14 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
+Mon Jun 12 2017 01:13:14 GMT+0100 (BST) > mk new component statusbar
+Mon Jun 12 2017 01:13:14 GMT+0100 (BST) > mk new component dashboard
+Mon Jun 12 2017 01:13:14 GMT+0100 (BST) > changing data on VPElement status to "v1.0.12 - 3"

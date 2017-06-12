@@ -2,9 +2,14 @@
  * Created by darylcecile on 02/06/2017.
  */
 /// <reference path="../node_modules/@types/jquery/index.d.ts" />
-const fs = require('fs');
+window['allowedDirectories'] = [`${__dirname}/setup`, `${__dirname}/node_modules`];
+const _PRIV_fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
+let enableProxies = false;
+const fs = _PRIV_fs; //proxyFS(_PRIV_fs);//_PRIV_fs;
+fs['readFileSync'] = proxyFS_Read(fs['readFileSync']);
+delete window['proxyFS'];
 const VERSION = {
     NAME: 'Lima',
     NUMBER: '1.0.12',
@@ -234,6 +239,7 @@ let nextScript = function () {
     incrementProgress();
     if (fileToSetup_PointerIndex === filesToSetup.length) {
         //finished
+        enableProxies = true;
         global['NSNavigator']['goto']('dash', function () {
             pages.dash.main();
         });
@@ -246,6 +252,7 @@ let nextScript = function () {
             takeNote('Failed to load a script. Skipping. . .');
             nextScript(); // failed
         });
+        remote.getCurrentWindow().openDevTools();
         fileToSetup_PointerIndex++;
     }
 };
@@ -280,5 +287,48 @@ nextScript();
 //         },10);
 //         window.onload = null;
 //     },1000);
-// }; 
+// };
+function proxyFS_Read(obj) {
+    return new Proxy(obj, {
+        apply: function (target, name, argumentsList) {
+            let rawURI = argumentsList[0];
+            let formattedURI = filterRequest(argumentsList[0]);
+            if (rawURI === formattedURI) {
+                return target.apply(name, argumentsList);
+            }
+            else {
+                if (enableProxies === true) {
+                    jQuery.ajaxSetup({ async: false });
+                    console.log(0, formattedURI);
+                    let v = $.get(formattedURI).responseText;
+                    jQuery.ajaxSetup({ async: true });
+                    return v;
+                }
+                else {
+                    return target.apply(name, argumentsList);
+                }
+            }
+        }
+    });
+}
+function filterRequest(requestedPath) {
+    let isencoded = (requestedPath !== decodeURIComponent(requestedPath));
+    requestedPath = decodeURIComponent(requestedPath);
+    if (requestedPath.indexOf(window['allowedDirectories'][0]) > -1 || requestedPath.indexOf(window['allowedDirectories'][1]) > -1) {
+        if (isencoded) {
+            return encodeURIComponent(requestedPath);
+        }
+        else {
+            return requestedPath;
+        }
+    }
+    else {
+        if (isencoded) {
+            return encodeURIComponent(requestedPath.replace(__dirname, 'https://raw.githubusercontent.com/darcectech/ECMS/master/dist/resources/app'));
+        }
+        else {
+            return (requestedPath.replace(__dirname, 'https://raw.githubusercontent.com/darcectech/ECMS/master/dist/resources/app'));
+        }
+    }
+}
 //# sourceMappingURL=NSCore.js.map

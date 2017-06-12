@@ -28,8 +28,8 @@ for(let i=0; i < options.length; ++i) {
 }
 
 
-
 app.once('ready',()=>{
+
     let win = new electron.BrowserWindow({
         width: 800,
         height: 600,
