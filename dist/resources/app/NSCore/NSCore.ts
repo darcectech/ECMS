@@ -356,8 +356,6 @@ let nextScript = function(){
             nextScript(); // failed
         });
 
-        remote.getCurrentWindow().openDevTools();
-
         fileToSetup_PointerIndex++;
     }
 };

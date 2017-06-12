@@ -263,7 +263,6 @@ let nextScript = function () {
             takeNote('Failed to load a script. Skipping. . .');
             nextScript(); // failed
         });
-        remote.getCurrentWindow().openDevTools();
         fileToSetup_PointerIndex++;
     }
 };
