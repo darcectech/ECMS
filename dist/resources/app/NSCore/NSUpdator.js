@@ -16,8 +16,11 @@ use.this = {
         }, 500);
         foldersToGet.forEach(function (folder) {
             takeNote(`Update for ${folder} started!`);
-            svnUltimate.commands.checkout('https://github.com/darcectech/ECMS/trunk/dist/resources/app/' + folder, path.join(__dirname, folder), function (err) {
-                takeNote(`Update attempt for ${folder}. Success? ${(err !== undefined).toString()}`);
+            svnUltimate.commands.checkout('https://github.com/darcectech/ECMS/trunk/dist/resources/app/' + folder, path.join(__dirname, folder), {
+                force: true,
+                quiet: false
+            }, function (err) {
+                takeNote(`Update attempt for ${folder}. Success? ${(err === undefined).toString()}`);
                 completedCount++;
             });
         });
