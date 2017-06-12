@@ -104,8 +104,8 @@ use.page = {
         let expDate = new Date(VERSION.EXPIRE).getTime() / 1000;
         let nowDate = Date.now() / 1000;
         let updatorObject = NSCore.use('NSUpdator');
-        let remoteVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER, VERSION.SERVICE);
-        let localVersion = updatorObject.convertUpdateToNumeric(manifest.Number, manifest.Service);
+        let localVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER, VERSION.SERVICE);
+        let remoteVersion = updatorObject.convertUpdateToNumeric(manifest.Number, manifest.Service);
         console.log('remote', remoteVersion);
         console.log('local', localVersion);
         console.log('exp', expDate);

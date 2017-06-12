@@ -18,20 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dash.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dash.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
-              <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+              <caret line="161" column="35" lean-forward="true" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
-                <marker date="1497231174000" expanded="true" signature="339:355" ph="..." />
+                <marker date="1497231349000" expanded="true" signature="339:355" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSUpdator.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NSUpdator.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NSCore/NSUpdator.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -466,12 +466,12 @@
       <workItem from="1497022965482" duration="1240000" />
       <workItem from="1497038455065" duration="2000" />
       <workItem from="1497198602875" duration="7152000" />
-      <workItem from="1497214417609" duration="12499000" />
+      <workItem from="1497214417609" duration="12622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123052000" />
+    <option name="totallyTimeSpent" value="123175000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -901,17 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="161" column="35" lean-forward="false" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-            <marker date="1497231174000" expanded="true" signature="339:355" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NSCore/NSCore.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -934,6 +923,17 @@
           <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSActivePages/dash.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="161" column="35" lean-forward="true" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#48#0" expanded="false" />
+            <marker date="1497231349000" expanded="true" signature="339:355" ph="..." />
           </folding>
         </state>
       </provider>

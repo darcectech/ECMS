@@ -153,8 +153,8 @@ use.page = {
 
         let updatorObject = NSCore.use('NSUpdator');
 
-        let remoteVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER,VERSION.SERVICE);
-        let localVersion = updatorObject.convertUpdateToNumeric(manifest.Number,manifest.Service);
+        let localVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER,VERSION.SERVICE);
+        let remoteVersion = updatorObject.convertUpdateToNumeric(manifest.Number,manifest.Service);
 
         console.log('remote',remoteVersion);
         console.log('local',localVersion);
