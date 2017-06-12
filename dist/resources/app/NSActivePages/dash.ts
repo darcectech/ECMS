@@ -156,6 +156,10 @@ use.page = {
         let remoteVersion = updatorObject.convertUpdateToNumeric(VERSION.NUMBER,VERSION.SERVICE);
         let localVersion = updatorObject.convertUpdateToNumeric(manifest.Number,manifest.Service);
 
+        console.log('remote',remoteVersion);
+        console.log('local',localVersion);
+        console.log('exp',expDate);
+        console.log('now',nowDate);
 
         if (nowDate >= expDate && remoteVersion > localVersion){
             Materialize.toast('Packages out of date',2000);
