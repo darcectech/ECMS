@@ -60,3 +60,19 @@ Tue Jun 20 2017 18:29:35 GMT+0100 (BST) > fading UI
 Tue Jun 20 2017 18:29:36 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
 Tue Jun 20 2017 18:29:36 GMT+0100 (BST) > showing UI
 Tue Jun 20 2017 18:29:36 GMT+0100 (BST) > changePage complete
+Tue Jun 20 2017 19:09:20 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 19:09:20 GMT+0100 (BST) > changing page to to maintenance, callback provided: true. 
+Tue Jun 20 2017 19:09:20 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 19:09:20 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 19:09:20 GMT+0100 (BST) > changePage complete
+Tue Jun 20 2017 19:09:24 GMT+0100 (BST) > attempting to use module "NSServerInterface"
+Tue Jun 20 2017 19:09:24 GMT+0100 (BST) > attempting to use module "NSSettings"
+Tue Jun 20 2017 19:09:24 GMT+0100 (BST) > attempting to use module "NSSettings"
+Tue Jun 20 2017 19:09:24 GMT+0100 (BST) > attempting to use module "NSSettings"
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 19:11:24 GMT+0100 (BST) > changePage complete
+Tue Jun 20 2017 19:27:57 GMT+0100 (BST) > closeRequested
