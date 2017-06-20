@@ -18,32 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="metrics._" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NSCoreUI/metrics._">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSVisualProvider.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NSCore/NSVisualProvider.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="metrics.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NSActivePages/metrics.ts">
+      <file leaf-file-name="fileexplorer.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NSActivePages/fileexplorer.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
+              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSServerInterface.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NSCore/NSServerInterface.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="124" column="8" lean-forward="false" selection-start-line="124" selection-start-column="8" selection-end-line="126" selection-end-column="35" />
+              <folding>
+                <marker date="1497925070000" expanded="true" signature="529:758" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +138,6 @@
         <option value="$PROJECT_DIR$/NSActivePages/maintenance.ts" />
         <option value="$PROJECT_DIR$/NSCoreUI/maintenance._" />
         <option value="$PROJECT_DIR$/NSCore/NSModal.ts" />
-        <option value="$PROJECT_DIR$/NSCore/NSServerInterface.ts" />
         <option value="$PROJECT_DIR$/NSActivePages/settings.ts" />
         <option value="$PROJECT_DIR$/setup/updateScript.ts" />
         <option value="$PROJECT_DIR$/NSCoreUI/metrics.css" />
@@ -158,10 +149,11 @@
         <option value="$PROJECT_DIR$/NSCoreUI/dashboard._" />
         <option value="$PROJECT_DIR$/setup/manifest.json" />
         <option value="$PROJECT_DIR$/NSActivePages/dash.ts" />
-        <option value="$PROJECT_DIR$/NSCore/NSCore.ts" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/NSCore/NSUpdator.ts" />
         <option value="$PROJECT_DIR$/NSActivePages/metrics.ts" />
+        <option value="$PROJECT_DIR$/NSCore/NSCore.ts" />
+        <option value="$PROJECT_DIR$/NSCore/NSServerInterface.ts" />
       </list>
     </option>
   </component>
@@ -296,8 +288,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NSActivePages" />
+              <option name="myItemId" value="NSCore" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NSCore.ts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -312,10 +308,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="NSActivePages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metrics.ts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -486,12 +478,12 @@
       <workItem from="1497038455065" duration="2000" />
       <workItem from="1497198602875" duration="7152000" />
       <workItem from="1497214417609" duration="13380000" />
-      <workItem from="1497919434849" duration="826000" />
+      <workItem from="1497919434849" duration="1684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124759000" />
+    <option name="totallyTimeSpent" value="125617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,35 +575,9 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NSCore/NSServerInterface.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2910">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1496982877000" expanded="true" signature="529:758" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NSCore/NSLogger.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-195">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NSCoreUI/metrics._">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NSCore/NSVisualProvider.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -668,6 +634,56 @@
         <state relative-caret-position="210">
           <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCore/NSVisualProvider.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCoreUI/metrics._">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCore/NSCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCore/NSCore.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSActivePages/fileexplorer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NSCore/NSServerInterface.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="124" column="8" lean-forward="false" selection-start-line="124" selection-start-column="8" selection-end-line="126" selection-end-column="35" />
+          <folding>
+            <marker date="1497925070000" expanded="true" signature="529:758" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

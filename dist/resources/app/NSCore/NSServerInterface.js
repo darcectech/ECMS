@@ -137,6 +137,7 @@ use.this = {
             creds_u = encryptor.decrypt(creds.user);
             creds_p = encryptor.decrypt(creds.password);
         }
+        console.log('decryption success,', creds_h, creds_u, creds_p);
         //if debugging, ignore server communication
         if (rootInf.release === "developer")
             return null;
@@ -153,7 +154,6 @@ use.this = {
                 window['FTPClient'].end();
             });
         });
-        // connect to localhost:21 as anonymous
         window['FTPClient'].connect(config);
         return window['FTPClient'];
     },

@@ -6,7 +6,15 @@ window['allowedDirectories'] = [`${__dirname}/setup`, `${__dirname}/node_modules
 const _PRIV_fs = require('fs');
 const path = require('path');
 const remote = require('electron').remote;
-let enableProxies = true;
+let _enableProxies = false;
+Object.defineProperty(window, 'enableProxies', {
+    get() {
+        return _enableProxies;
+    },
+    set(v) {
+        console.log('Proxy value setters have been disabled');
+    }
+});
 const fs = _PRIV_fs; //proxyFS(_PRIV_fs);//_PRIV_fs;
 fs['readFileSync'] = proxyFS_Read(fs['readFileSync']);
 const VERSION = {
