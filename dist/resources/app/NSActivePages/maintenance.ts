@@ -28,8 +28,8 @@ use.page = {
         let n = pages.maintenance.communicatorLocal;
 
         n.rename(
-            path.join(NSCore.use('NSSettings').STRUCTURE.server.root,'_maintenance.php'),
-            path.join(NSCore.use('NSSettings').STRUCTURE.server.root,'maintenance.php'),function(err){
+            path.join(NSCore.use('NSSettings').STRUCTURE.server.root,'_maintenance.html'),
+            path.join(NSCore.use('NSSettings').STRUCTURE.server.root,'maintenance.html'),function(err){
                 console.log(err,1);
                 n.end();
                 Materialize.toast('Website Offline!',2000);
