@@ -131,6 +131,22 @@ use.page = {
             },'.page');
 
         });
+
+        controls.dashboard.target('manage_project_button').addEventListener('click',function(){
+
+            if ( $('#manage_project').length > 0 ) return;
+
+            $('.page').empty();
+
+            lastModuleName = 'manage_project';
+            use.page('manage_project');
+            lastModuleName = '';
+
+            use('NSNavigator').changePage('manage_project',function(){
+                pages.manage_project.main();
+            },'.page');
+
+        });
         //updates_button
 
         let Mousetrap = require('mousetrap');

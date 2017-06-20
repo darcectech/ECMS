@@ -59,7 +59,7 @@
 
 }
 
-button {
+#toolbar button {
     position: absolute;
     right: var(--toolbar-padding);
     top: var(--toolbar-padding);
@@ -82,27 +82,27 @@ button {
     font-size: inherit;
 }
 
-button.max {
+#toolbar button.max {
     right: calc(var(--toolbar-padding) + ((var(--toolbar-button-size) + 5px) * 1));
 }
 
-button.min {
+#toolbar button.min {
     right: calc(var(--toolbar-padding) + ((var(--toolbar-button-size) + 5px) * 2));
 }
 
-button.max:hover{
+#toolbar button.max:hover{
     background: #FFC107;
 }
 
-button.min:hover{
+#toolbar button.min:hover{
     background: #4CAF50;
 }
 
-button.close:hover{
+#toolbar button.close:hover{
     background: #E91E63;
 }
 
-button:hover{
+#toolbar button:hover{
     box-shadow: 0 0 12px -2px #676767;
     color: white;
     text-shadow: 0 0 5px white;

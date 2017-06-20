@@ -8,6 +8,7 @@
             <li vp-target="files_button"> <span>Files</span> <i class="material-icons">folder_open</i> </li>
             <li vp-target="maintenance_button"> <span>Maintenance</span> <i class="material-icons">restore</i> </li>
             <!--<li vp-target="information_button"> <span>Information</span> <i class="material-icons">info_outline</i> </li>-->
+            <li vp-target="manage_project_button"> <span>Manage Projects</span> <i class="material-icons">file_upload</i> </li>
             <li vp-target="lincenses_button"> <span>Licenses</span> <i class="material-icons">assignment</i> </li>
             <li onclick="devToolsRequested()"> <span>Debug</span> <i class="material-icons">bug_report</i> </li>
             <li vp-target="settings_button"> <span>Settings</span> <i class="material-icons">build</i> </li>

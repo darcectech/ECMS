@@ -4,6 +4,7 @@
 @import 'dashboard.css';
 @import 'pages.css';
 
+
 :root{
     --nav-width:40px;
     --toolbar-height:35px;
@@ -165,4 +166,27 @@ img[alt=Logo]{
     filter: invert(100%);
 }
 
+button.simple {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: none;
+    background: #00BCD4;
+    color: white;
+    transform:scale(0.9);
+    transition: all .4s;
+}
 
+button.simple:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 40px -12px black;
+}
+
+button.simple:active{
+    transform:scale(1);
+    background: #00BCD4;
+    box-shadow: 0 0 30px -6px black;
+}
+
+button.simple:focus{
+    background: #00BCD4;
+}

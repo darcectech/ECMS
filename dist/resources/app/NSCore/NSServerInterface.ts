@@ -61,18 +61,11 @@ use.this = {
                                             rs.on("end", function () {
                                                 fs.writeFileSync( path.join(remote.app.getPath('desktop') , 'TEMP_EDIT' ,entry.name ) , Buffer.concat(chunks).toString() , 'utf8' );
 
-                                                let needsUploading = false;
-                                                let ws = new WatchSession( path.join(remote.app.getPath('desktop') , 'TEMP_EDIT' ,entry.name ) );
-                                                ws.startWatching(function(a){
-                                                    needsUploading = true;
-                                                    console.log('changed',a);
-                                                });
-
                                                 NSCore.use('NSModal').showModal({
-                                                    header:`Here is how...`,
+                                                    header:`Make changes`,
                                                     message:`${entry.name} has been downloaded to the "TEMP_EDIT" folder on your desktop. Make changes to it then click save below`,
                                                     yes:{
-                                                        text:'Save and Upload',
+                                                        text:'I have saved my changes',
                                                         fn:function(){}
                                                     },
                                                     no:{
@@ -80,7 +73,7 @@ use.this = {
                                                         fn:function(){}
                                                     }
                                                 }).then(function(outCome){
-                                                    ws.endAndDispose();
+
                                                     n = NSCore.use('NSServerInterface').communicator();
                                                     if (outCome === true){
                                                         //upload

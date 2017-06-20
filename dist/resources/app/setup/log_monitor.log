@@ -1,46 +1,32 @@
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > create "use" object
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > creating "this" in "use" object
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > creating "page" in "use" object
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "NSLogger".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > attempting to use module "NSLogger"
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "NSNavigator".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "NSTransitioner".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "NSVisualProvider".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > setting up "register:dash".
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > navigating to dash, callback provided: true
-Tue Jun 20 2017 03:15:26 GMT+0100 (BST) > fading UI
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > showing UI
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > navigation complete
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > mk new component toolbar
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > mk new component statusbar
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > mk new component dashboard
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > changing data on VPElement status to "v1.2.26 - 23"
-Tue Jun 20 2017 03:15:27 GMT+0100 (BST) > attempting to use module "NSUpdator"
-Tue Jun 20 2017 03:15:30 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Tue Jun 20 2017 03:15:30 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
-Tue Jun 20 2017 03:15:30 GMT+0100 (BST) > fading UI
-Tue Jun 20 2017 03:15:31 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Tue Jun 20 2017 03:15:31 GMT+0100 (BST) > showing UI
-Tue Jun 20 2017 03:15:31 GMT+0100 (BST) > changePage complete
-Tue Jun 20 2017 03:15:33 GMT+0100 (BST) > changing page to to fileexplorer, callback provided: true. 
-Tue Jun 20 2017 03:15:33 GMT+0100 (BST) > fading UI
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > showing UI
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > changePage complete
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:15:34 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:16:27 GMT+0100 (BST) > attempting to use module "NSServerInterface"
-Tue Jun 20 2017 03:16:27 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:19:31 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:20:23 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:21:28 GMT+0100 (BST) > attempting to use module "NSSettings"
-Tue Jun 20 2017 03:25:31 GMT+0100 (BST) > closeRequested
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > create "use" object
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > creating "this" in "use" object
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > creating "page" in "use" object
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "NSLogger".
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > attempting to use module "NSLogger"
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "NSNavigator".
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "NSTransitioner".
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "NSVisualProvider".
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
+Tue Jun 20 2017 17:42:48 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > setting up "register:dash".
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > navigating to dash, callback provided: true
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > navigation complete
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > mk new component toolbar
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > mk new component statusbar
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > mk new component dashboard
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > changing data on VPElement status to "v1.2.26 - 23"
+Tue Jun 20 2017 17:42:49 GMT+0100 (BST) > attempting to use module "NSUpdator"
+Tue Jun 20 2017 17:42:50 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 17:42:50 GMT+0100 (BST) > changing page to to manage_project, callback provided: true. 
+Tue Jun 20 2017 17:42:50 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 17:42:51 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Tue Jun 20 2017 17:42:51 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 17:42:51 GMT+0100 (BST) > changePage complete
+Tue Jun 20 2017 18:05:44 GMT+0100 (BST) > maxRequested

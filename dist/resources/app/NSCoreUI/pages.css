@@ -44,3 +44,41 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+
+#manage_project div.dropzone{
+    background:gray;
+    color:White;
+    font-weight: 200;
+    border-radius: 12px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: inset 0px 0px 4px black;
+    transition: all .4s;
+}
+
+#manage_project div.dropzone p{
+    pointer-events: none;
+    opacity: 0.5;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#manage_project div.dropzone:hover{
+    box-shadow: inset 0px 0px 12px black;
+}
+
+#manage_project div.dropzone.ignore{
+    pointer-events: none;
+    visibility: hidden;
+    display: none;
+}
+
+#manage_project h5{
+    font-weight: 200;
+    font-size: 25px;
+}
