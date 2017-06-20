@@ -1,41 +1,31 @@
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > create "use" object
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > creating "this" in "use" object
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > creating "page" in "use" object
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "NSLogger".
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > attempting to use module "NSLogger"
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "NSNavigator".
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > attempting to use module "NSNavigator"
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "NSTransitioner".
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > attempting to use module "NSTransitioner"
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "NSVisualProvider".
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
-Mon Jun 12 2017 02:48:46 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
-Mon Jun 12 2017 02:48:47 GMT+0100 (BST) > setting up "register:dash".
-Mon Jun 12 2017 02:48:47 GMT+0100 (BST) > navigating to dash, callback provided: true
-Mon Jun 12 2017 02:48:47 GMT+0100 (BST) > fading UI
-Mon Jun 12 2017 02:48:47 GMT+0100 (BST) > showing UI
-Mon Jun 12 2017 02:48:47 GMT+0100 (BST) > navigation complete
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > mk new component toolbar
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > mk new component statusbar
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > mk new component dashboard
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > changing data on VPElement status to "v1.2.26 - 23"
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > attempting to use module "NSUpdator"
-Mon Jun 12 2017 02:48:48 GMT+0100 (BST) > attempting to use module "NSModal"
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update started
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for css started!
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for lib started!
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for licenses started!
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for NSActivePages started!
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for NSCore started!
-Mon Jun 12 2017 02:48:51 GMT+0100 (BST) > Update for NSCoreUI started!
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for css. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for lib. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for NSCore. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for NSCoreUI. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for licenses. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update attempt for NSActivePages. Success? true
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > Update Complete
-Mon Jun 12 2017 02:48:53 GMT+0100 (BST) > attempting to use module "NSModal"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > create "use" object
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > creating "this" in "use" object
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > creating "page" in "use" object
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "NSLogger".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > attempting to use module "NSLogger"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "NSNavigator".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "NSTransitioner".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > attempting to use module "NSTransitioner"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "NSVisualProvider".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > setting up "register:dash".
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > navigating to dash, callback provided: true
+Tue Jun 20 2017 02:47:50 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > navigation complete
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > mk new component toolbar
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > changing data on VPElement title to "Source<span style="font-weight: 300">Xero</span>"
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > mk new component statusbar
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > mk new component dashboard
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > changing data on VPElement status to "v1.2.26 - 23"
+Tue Jun 20 2017 02:47:51 GMT+0100 (BST) > attempting to use module "NSUpdator"
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > attempting to use module "NSNavigator"
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > changing page to to metrics, callback provided: true. 
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > fading UI
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > attempting to use module "NSVisualProvider"
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > showing UI
+Tue Jun 20 2017 02:47:55 GMT+0100 (BST) > changePage complete
