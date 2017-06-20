@@ -1,0 +1,60 @@
+<div id="manage_project" material>
+    <require type="style" source="manage_project.css"></require>
+    <h2>Manage Projects</h2>
+
+    <div scroller xl>
+        <br>
+        <div class="row">
+            <div class="col s12 l12">
+                <h5>Current Projects</h5>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Project Name</th>
+                    <th>File Count</th>
+                    <th>Image Count</th>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="row">
+            <div class="col s12 l12">
+                <h5>Create New Project</h5>
+            </div>
+            <div class="col s6 m6 l4">
+                <div class="input-field">
+                    <input id="projname_input" type="text">
+                    <label for="projname_input">Project Name</label>
+                </div>
+            </div>
+            <div class="col s6 m6 l4">
+                <div class="input-field">
+                    <input id="catnames_input" type="text">
+                    <label for="catnames_input">Category Seperated by commas</label>
+                </div>
+            </div>
+            <div class="col s6 m6 l4">
+                <p>
+                    <input type="checkbox" id="customizable_input" />
+                    <label for="customizable_input">Is Customizable?</label>
+                </p>
+            </div>
+            <div class="col s6 m6 l12">
+                <div class="dropzone">
+                    <p>Drop here</p>
+                </div>
+            </div>
+            <div class="col s12 m12 l12 center">
+                <br>
+                <button class="simple">Upload</button>
+            </div>
+        </div>
+    </div>
+</div>

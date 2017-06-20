@@ -1,0 +1,84 @@
+
+.page{
+    z-index: 2;
+    left: var(--nav-width);
+    top: 0;
+    padding: var(--toolbar-height) calc(var(--toolbar-padding) * 3) 0;
+    width: calc(100% - var(--nav-width));
+    bottom: 0;
+    overflow: hidden;
+    /* background: linear-gradient(to top,gainsboro calc(100% - var(--toolbar-height)),transparent var(--toolbar-height)); */
+    /*background: linear-gradient(to top,#d6d6d6 calc(100% - var(--toolbar-height)), transparent 9px);*/
+    background: linear-gradient(to top,white calc(100% - var(--toolbar-height)), transparent var(--toolbar-height));
+
+    opacity: 1;
+    position: relative;
+    height: 100%;
+    display: inline-grid;
+}
+
+.page>div {
+    position: absolute;
+    width: calc(100% - var(--nav-width));
+    display: flex;
+    flex-direction: column;
+    left: calc(var(--nav-width) / 2);
+    top: var(--toolbar-height);
+    bottom: 0;
+}
+
+#metrics .chart-container {
+    position: relative;
+    /* margin: auto; */
+    height: 50%;
+    width: 100%;
+}
+
+#metrics .chart-container.half{
+    display: inline-block;
+    width: 50%;
+    vertical-align: bottom;
+}
+
+#metrics [scroller][xl] {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#manage_project div.dropzone{
+    background:gray;
+    color:White;
+    font-weight: 200;
+    border-radius: 12px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: inset 0px 0px 4px black;
+    transition: all .4s;
+}
+
+#manage_project div.dropzone p{
+    pointer-events: none;
+    opacity: 0.5;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#manage_project div.dropzone:hover{
+    box-shadow: inset 0px 0px 12px black;
+}
+
+#manage_project div.dropzone.ignore{
+    pointer-events: none;
+    visibility: hidden;
+    display: none;
+}
+
+#manage_project h5{
+    font-weight: 200;
+    font-size: 25px;
+}

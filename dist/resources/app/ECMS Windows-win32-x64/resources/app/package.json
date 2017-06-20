@@ -1,0 +1,29 @@
+{
+  "name": "browsh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "icon": "ECMS.png",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daryl Cecile",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.6.8"
+  },
+  "os": [
+    "darwin",
+    "win32"
+  ],
+  "files": [
+    "/"
+  ],
+  "dependencies": {
+    "@types/materialize-css": "^0.98.1",
+    "chokidar": "^1.7.0",
+    "ftp": "^0.3.10",
+    "mousetrap": "^1.6.1",
+    "simple-encryptor": "^1.1.0"
+  }
+}

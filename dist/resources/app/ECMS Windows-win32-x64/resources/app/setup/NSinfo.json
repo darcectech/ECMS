@@ -1,0 +1,30 @@
+{
+	"core": {
+		"firstRun": "false",
+		"dev": false,
+		"UUID": "c52e9ec2-8c33-41f6-8b51-d1623215d5e3"
+	},
+	"user":{
+		"firstName":"Richard",
+		"lastName":"Crumley",
+		"email":""
+	},
+	"server": {
+		"host": "8690ec00712453fd5bb513763e0e9b170bc46f7302d6a39b4cf5b53eca3156773a88bc3b135bad721456ce2236d96bf9OZJPdT7x9nO2j9avAJsjDDztsJ8+wSV+k7WSwDnQGfw=",
+		"user": "01a9d39a16dc839bb50480025ff4a18c0a91b19a3be75cd48c613bd28e64f2c0868d9c92c651fd3d5bd429cdae58c1612DMTeev3eUkqG9a8t8r3ng==",
+		"password": "70da189a8b1141349d2d681e03cd2854835e5616234ccd23b623c9a7308df67a772ba96fba24e83839e5bfbc64a7f6d1CHdQcgc6pgi9dF49yRqX5g==",
+		"port": "21",
+		"root": "/clickandbuilds/3dpthings/"
+	},
+	"NSNavigator": {
+		"moduleFolders": [
+			"NSCore",
+			"lib"
+		]
+	},
+	"release": "developers",
+	"services": [
+		"Net-Sync",
+		"Incremental-Updates"
+	]
+}

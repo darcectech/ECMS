@@ -1,0 +1,15 @@
+
+:root{
+    --c : rgba(255, 20, 147, 0.21);
+    --d : rgba(0, 255, 10, 0.2);
+    --f : rgba(232, 255, 0, 0.2);
+}
+
+#manage_project div.dropzone{
+    background:gray;
+    color:White;
+    font-weight: 200;
+    border-radius: 12px;
+    width: 90%;
+    height: 150px;
+}
