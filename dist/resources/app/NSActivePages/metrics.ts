@@ -116,7 +116,7 @@ use.page = {
         let request = require("request");
 
         let options = { method: 'GET',
-            url: `http://darylcecile.net/slimApp/public/index.php?siteRef=${siteRef}` };
+            url: `http://darylcecile.net/api/performance/index.php?siteRef=${siteRef}` };
 
         request(options, function (error, response, body) {
             if (error) throw new Error(error);

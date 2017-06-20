@@ -38,21 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="metrics.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NSActivePages/metrics.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1161">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="metrics.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NSActivePages/metrics.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -496,12 +486,12 @@
       <workItem from="1497038455065" duration="2000" />
       <workItem from="1497198602875" duration="7152000" />
       <workItem from="1497214417609" duration="13380000" />
-      <workItem from="1497919434849" duration="597000" />
+      <workItem from="1497919434849" duration="826000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124530000" />
+    <option name="totallyTimeSpent" value="124759000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,14 +621,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1161">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1497923712000" expanded="true" signature="60:7351" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="3438:3836" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="3504:3609" ph="{&quot;method&quot;: 'GET'...}" />
+            <marker date="1497923712000" expanded="true" signature="3669:3828" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="3877:5227" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="3898:4380" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="3967:4370" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="3968:4369" ph="{&quot;label&quot;: &quot;Pageload Average&quot;...}" />
+            <marker date="1497923712000" expanded="true" signature="4404:5115" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="4491:4935" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="4492:4934" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="4568:4697" ph="{&quot;color&quot;: &quot;rgba(0, 188, 212,0.2)&quot;...}" />
+            <marker date="1497923712000" expanded="true" signature="4730:4912" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="4802:4886" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="4960:5091" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="4961:5090" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="4998:5068" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="5155:5219" ph="{&quot;options&quot;: options...}" />
+            <marker date="1497923712000" expanded="true" signature="5268:6514" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="5289:5780" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="5358:5770" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="5359:5769" ph="{&quot;label&quot;: &quot;Total User Engagement&quot;...}" />
+            <marker date="1497923712000" expanded="true" signature="5804:6401" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="5891:6221" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="5892:6220" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="5968:6098" ph="{&quot;color&quot;: &quot;rgba(255, 20, 147,0.2)&quot;...}" />
+            <marker date="1497923712000" expanded="true" signature="6131:6198" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="6246:6377" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="6247:6376" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="6284:6354" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="6442:6506" ph="{&quot;options&quot;: options...}" />
+            <marker date="1497923712000" expanded="true" signature="6555:7349" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="6576:7158" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="6645:7148" ph="[...]" />
+            <marker date="1497923712000" expanded="true" signature="6646:7147" ph="{&quot;label&quot;: &quot;Sessions&quot;...}" />
+            <marker date="1497923712000" expanded="true" signature="7182:7232" ph="{...}" />
+            <marker date="1497923712000" expanded="true" signature="7277:7341" ph="{&quot;options&quot;: options...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NSActivePages/metrics.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="116" column="0" lean-forward="true" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="118" column="56" lean-forward="false" selection-start-line="118" selection-start-column="56" selection-end-line="118" selection-end-column="56" />
           <folding />
         </state>
       </provider>
